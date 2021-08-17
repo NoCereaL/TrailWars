@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class CountDown : MonoBehaviour
+{
+    public Text countText;
+    public Rigidbody2D rb;
+    public Animator animator;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //animator.enabled = true;
+        StartCoroutine(StartCount());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    IEnumerator StartCount()
+    {
+        yield return new WaitForSeconds((float)0.5);
+        animator.enabled = true;
+        countText.text = "3";
+        yield return new WaitForSeconds((float)0.5);
+        countText.text = "2";
+        yield return new WaitForSeconds((float)0.5);
+        countText.text = "1";
+        yield return new WaitForSeconds((float)0.5);
+        countText.text = "";
+        animator.enabled = false;
+        rb.isKinematic = false;
+    }
+
+}
