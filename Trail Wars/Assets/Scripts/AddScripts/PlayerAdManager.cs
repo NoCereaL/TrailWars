@@ -6,19 +6,12 @@ using UnityEngine.Advertisements;
 public class PlayerAdManager : MonoBehaviour
 {
     public GameObject player;
-    public Vector3 spawnPoint;
     public int showAdsAfter;
     public int deathCounter;
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        player = this.gameObject;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,10 +20,29 @@ public class PlayerAdManager : MonoBehaviour
         {
             if(deathCounter >= showAdsAfter)
             {
-                if (Advertisement.IsReady("Rewarded_iOS"))
+         
+                if (Application.platform == RuntimePlatform.OSXEditor)
                 {
-                    Advertisement.Show("Rewarded_iOS");
+                    if (Advertisement.IsReady("Interstitial_iOS"))
+                    {
+                        Advertisement.Show("Interstitial_iOS");
+                    }
                 }
+                if (Application.platform == RuntimePlatform.IPhonePlayer)
+                {
+                    if (Advertisement.IsReady("Interstitial_iOS"))
+                    {
+                        Advertisement.Show("Interstitial_iOS");
+                    }
+                }
+                if (Application.platform == RuntimePlatform.Android)
+                {
+                    if (Advertisement.IsReady("Interstitial_Android"))
+                    {
+                        Advertisement.Show("Interstitial_Android");
+                    }
+                }
+
                 deathCounter = 0;
             }
             deathCounter++;

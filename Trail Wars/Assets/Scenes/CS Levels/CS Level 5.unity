@@ -7318,6 +7318,7 @@ GameObject:
   - component: {fileID: 2017021089}
   - component: {fileID: 2017021088}
   - component: {fileID: 2017021085}
+  - component: {fileID: 2017021091}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7487,6 +7488,21 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2017021083}
   timeToChange: 2
   timeSinceChange: 0
+--- !u!114 &2017021091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017021082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe2c27f4ce844cc4b176b2d34e01488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  showAdsAfter: 5
+  deathCounter: 0
 --- !u!1 &2060572887
 GameObject:
   m_ObjectHideFlags: 0

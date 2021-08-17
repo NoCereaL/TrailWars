@@ -32,6 +32,13 @@ public class AdManager : MonoBehaviour
                 Advertisement.Show("Rewarded_iOS");
             }
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (Advertisement.IsReady("Interstitial_iOS"))
+            {
+                Advertisement.Show("Interstitial_iOS");
+            }
+        }
     }
 
     public void InitializeAds()
