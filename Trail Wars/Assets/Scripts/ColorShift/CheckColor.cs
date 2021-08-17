@@ -10,7 +10,7 @@ public class CheckColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("CSPlayer").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

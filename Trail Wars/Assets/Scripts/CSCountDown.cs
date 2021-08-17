@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CountDown : MonoBehaviour
+public class CSCountDown : MonoBehaviour
 {
     public Text countText;
     public Rigidbody2D rb;
@@ -13,13 +13,14 @@ public class CountDown : MonoBehaviour
     void Start()
     {
         //animator.enabled = true;
+        rb = GameObject.Find("CSPlayer").GetComponent<Rigidbody2D>();
         StartCoroutine(StartCount());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     IEnumerator StartCount()
@@ -36,5 +37,4 @@ public class CountDown : MonoBehaviour
         animator.enabled = false;
         rb.isKinematic = false;
     }
-
 }
