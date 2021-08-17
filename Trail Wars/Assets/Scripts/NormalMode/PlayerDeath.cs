@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Advertisements;
 
 public class PlayerDeath : MonoBehaviour
 {
-
     public GameObject player;
     public Vector3 spawnPoint;
     // Start is called before the first frame update
@@ -26,4 +26,5 @@ public class PlayerDeath : MonoBehaviour
             player.transform.position = spawnPoint;
         }
     }
+
 }
