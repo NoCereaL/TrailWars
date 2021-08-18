@@ -7,11 +7,12 @@ public class PlayerDBDeath : MonoBehaviour
     public GameObject player;
     public Rigidbody2D rb;
     public Vector3 spawnPoint;
+    public CameraShake cameraShake;
  
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnPoint = new Vector3(player.transform.position.x, player.transform.position.y + 5, player.transform.position.z);
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class PlayerDBDeath : MonoBehaviour
     {
         if(collision.collider.tag == "obstacle")
         {
+            StartCoroutine(cameraShake.Shake(.1f, .4f));
             rb.velocity = new Vector2(0, 0);
             player.transform.position = spawnPoint;
         }
