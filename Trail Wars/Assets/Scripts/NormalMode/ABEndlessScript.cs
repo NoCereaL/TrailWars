@@ -6,8 +6,8 @@ public class ABEndlessScript : MonoBehaviour
 {
     private Transform player;
     private Transform obstacle;
-    private Transform obstacle2;
     private GameObject nextPoint;
+
     private Vector3 spawnPoint;
 
     private GameObject gameContainer;
@@ -24,16 +24,17 @@ public class ABEndlessScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SpawnObstacle();
     }
 
     private void FixedUpdate()
     {
-        SpawnObstacle();
+        //SpawnObstacle();
     }
 
     public void SpawnObstacle()
     {
-       if(player.position.y > obstacle.position.y)
+       if(player.position.y > obstacle.position.y - 4)
         {
             Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
             this.gameObject.GetComponent<ABEndlessScript>().enabled = false;

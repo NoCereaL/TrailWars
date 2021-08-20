@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5241326010993525511}
   - component: {fileID: 5241326010993525510}
-  - component: {fileID: 5241326010993525508}
   - component: {fileID: 5241326010993525509}
   - component: {fileID: 5241326010993525626}
   - component: {fileID: 5241326010993525627}
   - component: {fileID: 5241326010993525624}
+  - component: {fileID: 3926857938622261666}
+  - component: {fileID: 581446226746516707}
   m_Layer: 0
   m_Name: EndlessObstacle
   m_TagString: obstacle
@@ -87,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5241326010993525508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5241326010993525505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c839509fdb5a3494399e9239c396b758, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 5241326010993525626}
-  xSpeed: 2
 --- !u!96 &5241326010993525509
 TrailRenderer:
   serializedVersion: 2
@@ -287,3 +274,29 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &3926857938622261666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241326010993525505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e046ad1323f494ebf712690afb7d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &581446226746516707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241326010993525505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76ede3e86f6e4fef98cb4d840c02cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 5241326010993525626}
+  xSpeed: 2
