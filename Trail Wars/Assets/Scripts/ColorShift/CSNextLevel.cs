@@ -9,7 +9,7 @@ public class CSNextLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -22,6 +22,7 @@ public class CSNextLevel : MonoBehaviour
     {
         if (collision.collider.tag == "FinishLine")
         {
+            Vibration.VibrateNope();
             SceneManager.LoadScene(level);
         }
     }

@@ -4,29 +4,39 @@ using UnityEngine;
 
 public class ABEndlessScript : MonoBehaviour
 {
-    public Transform player;
-    public Transform obstacle;
-    public Transform nextPoint;
-    public Vector3 spawnPoint;
+    private Transform player;
+    private Transform obstacle;
+    private Transform obstacle2;
+    private GameObject nextPoint;
+    private Vector3 spawnPoint;
+
+    private GameObject gameContainer;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("ABPlayer").GetComponent<Transform>();
+        player = GameObject.Find("ABPlayerEndless").GetComponent<Transform>();
         obstacle = this.gameObject.GetComponent<Transform>();
-        nextPoint = this.gameObject.GetComponentInChildren<Transform>().Find("NextPoint");
-
-        //SpawnObstacle();
+        nextPoint = this.gameObject;
+        gameContainer = GameObject.Find("GameContainer");
+        spawnPoint = new Vector3(transform.position.x, transform.position.y + 4, transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    private void FixedUpdate()
+    {
+        SpawnObstacle();
     }
 
     public void SpawnObstacle()
     {
-        spawnPoint = new Vector3(transform.position.x, transform.position.y + 8, transform.position.z);
-        Instantiate(obstacle, nextPoint.position, Quaternion.identity);
+       if(player.position.y > obstacle.position.y)
+        {
+            Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
+            this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+        }
     }
 }

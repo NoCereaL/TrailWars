@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 public class PlayerAdManager : MonoBehaviour
 {
@@ -14,13 +15,17 @@ public class PlayerAdManager : MonoBehaviour
         player = this.gameObject;
     }
 
+    private void Update()
+    {
+        
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "obstacle")
         {
             if(deathCounter >= showAdsAfter)
             {
-         
                 if (Application.platform == RuntimePlatform.OSXEditor)
                 {
                     if (Advertisement.IsReady("Interstitial_iOS"))
