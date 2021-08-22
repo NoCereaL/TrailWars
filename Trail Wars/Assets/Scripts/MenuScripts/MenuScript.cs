@@ -61,6 +61,11 @@ public class MenuScript : MonoBehaviour
 
     //Ascend Ball Levels
 
+    public void ABEndless()
+    {
+        SceneManager.LoadScene("ABEndless");
+    }
+
     public void Level1()
     {
         SceneManager.LoadScene("Level 1");
