@@ -120,6 +120,11 @@ public class MenuScript : MonoBehaviour
 
     //Color Shift Levels
 
+    public void CSEndless()
+    {
+        SceneManager.LoadScene("CS Endless");
+    }
+
     public void CSLevel1()
     {
         SceneManager.LoadScene("CS Level 1");

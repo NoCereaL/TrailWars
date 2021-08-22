@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CSEndlessPanel : MonoBehaviour
+public class DBEndlessPanel : MonoBehaviour
 {
     public Transform player;
     public GameObject panel;
@@ -14,7 +14,7 @@ public class CSEndlessPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("CSPlayer").GetComponent<Transform>();
+        player = GameObject.Find("DBPlayer").GetComponent<Transform>();
         panel = this.gameObject;
         gameContainer = GameObject.Find("GameContainer");
         spawnPoint = spawnPosition.transform.position;
@@ -37,7 +37,7 @@ public class CSEndlessPanel : MonoBehaviour
         {
             GameObject newPanel = Instantiate(panel, spawnPoint, Quaternion.identity, panel.transform);
             newPanel.transform.localScale = new Vector3(1, 1, 1);
-            this.gameObject.GetComponent<CSEndlessPanel>().enabled = false;
+            this.gameObject.GetComponent<DBEndlessPanel>().enabled = false;
         }
     }
 }
