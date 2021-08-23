@@ -36,6 +36,7 @@ public class ABDeathEndless : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = Vector2.zero;
+            ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
         }
     }

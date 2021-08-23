@@ -37,7 +37,6 @@ public class ABEndlessScript : MonoBehaviour
        if(player.position.y > obstacle.position.y - 4)
         {
             Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
-            ABEndlessScore.ABScore++;
             this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
         }
     }
