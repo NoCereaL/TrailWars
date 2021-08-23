@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class EndlessColorShift : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject obstacle;
-    public SpriteRenderer spriteRenderer;
-    public Transform changeColorPoint;
+    private GameObject player;
+    private GameObject obstacle;
+    private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +15,13 @@ public class EndlessColorShift : MonoBehaviour
         spriteRenderer = player.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(player.transform.position.y < changeColorPoint.position.y)
+        if (collision.tag == "Player")
         {
             Color[] colors = { Color.red, Color.green, Color.blue };
 
-            if (spriteRenderer != null )
+            if (spriteRenderer != null)
             {
 
                 Color newColor = colors[(int)Random.Range(0, 3)];
@@ -32,5 +30,6 @@ public class EndlessColorShift : MonoBehaviour
             }
             this.gameObject.GetComponent<EndlessColorShift>().enabled = false;
         }
+
     }
 }

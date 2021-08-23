@@ -7,9 +7,9 @@ public class PlayerCSDeath : MonoBehaviour
 {
     public GameObject player;
     public Rigidbody2D rb;
-    public Vector3 spawnPoint;
-    public ParticleSystem particleSystem;
-    public GameObject particleController;
+    private Vector3 spawnPoint;
+    private ParticleSystem particleSystem;
+    private GameObject particleController;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +34,7 @@ public class PlayerCSDeath : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = new Vector2(0, 0);
+            CSEndlessScore.CSScore = 0;
             player.transform.position = spawnPoint;
         }
     }

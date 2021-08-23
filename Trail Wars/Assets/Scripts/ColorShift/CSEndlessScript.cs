@@ -40,7 +40,6 @@ public class CSEndlessScript : MonoBehaviour
         {
             Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
             //nextPoint.GetComponent<SpriteRenderer>().color = newColor;
-            CSEndlessScore.CSScore++;
             this.gameObject.GetComponent<CSEndlessScript>().enabled = false;
         }
     }

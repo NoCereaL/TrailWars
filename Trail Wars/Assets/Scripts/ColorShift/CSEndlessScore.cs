@@ -7,20 +7,27 @@ public class CSEndlessScore : MonoBehaviour
 {
     public static int CSScore;
     public Text score;
-    // Start is called before the first frame update
-    void Start()
-    {
+    public Text highScore;
 
-    }
 
     // Update is called once per frame
     void Update()
     {
+        SetHighScore();
         GiveScore();
     }
 
     public void GiveScore()
     {
         score.text = CSScore + "";
+        highScore.text = "HighScore: " + PlayerPrefs.GetInt("CSHighScore");
+    }
+
+    public void SetHighScore()
+    {
+        if (CSScore > PlayerPrefs.GetInt("CSHighScore"))
+        {
+            PlayerPrefs.SetInt("CSHighScore", CSScore);
+        }
     }
 }
