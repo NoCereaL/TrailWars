@@ -18,7 +18,7 @@ public class CSEndlessScript : MonoBehaviour
         obstacle = this.gameObject.GetComponent<Transform>();
         nextPoint = this.gameObject;
         gameContainer = GameObject.Find("GameContainer");
-        spawnPoint = new Vector3(transform.position.x, transform.position.y - 4, transform.position.z);
+        spawnPoint = new Vector3(transform.position.x, transform.position.y - 5, transform.position.z);
     }
 
     // Update is called once per frame
