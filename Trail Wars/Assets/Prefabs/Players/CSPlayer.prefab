@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 4346343685618249071}
   m_Layer: 0
   m_Name: CSPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7087517774824395676}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66254c07d570644d8b28586de9627d80, type: 3}
   m_Name: 
@@ -276,9 +276,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7087517774824395676}
   rb: {fileID: 7087517774824395672}
-  spawnPoint: {x: 0, y: 45, z: -1}
-  particleSystem: {fileID: 0}
-  particleController: {fileID: 0}
 --- !u!114 &7087517774824395675
 MonoBehaviour:
   m_ObjectHideFlags: 0
