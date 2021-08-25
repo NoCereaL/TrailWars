@@ -47,10 +47,9 @@ public class DBEndlessScript : MonoBehaviour
         if (player.position.y < obstacle.position.y + 8)
         {
             int randomInt = Random.Range(0, 10);
-            Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
-            //nextPoint.transform.localScale = new Vector3(objScale[randomInt], nextPoint.transform.localScale.y, nextPoint.transform.localScale.z) ;
-            //nextPoint.transform.localPosition = new Vector3(objPosition[randomInt], spawnPoint.y, nextPoint.transform.position.z);
-            DBEndlessScore.DBScore++;
+            GameObject newObj = Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
+            newObj.transform.localScale = new Vector3(objScale[randomInt], newObj.transform.localScale.y, newObj.transform.localScale.z) ;
+            newObj.transform.localPosition = new Vector3(objPosition[randomInt] , newObj.transform.position.y, newObj.transform.position.z);
             this.gameObject.GetComponent<DBEndlessScript>().enabled = false;
         }
     }
