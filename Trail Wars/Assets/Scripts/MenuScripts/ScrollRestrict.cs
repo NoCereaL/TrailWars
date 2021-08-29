@@ -24,11 +24,11 @@ public class ScrollRestrict : MonoBehaviour
 
     public void RestrictMaxScroll()
     {
-        if (rectTransform.position.y <= currentPos.y)
+        if (scrollRect.verticalScrollbar.value == 1)
         {
             scrollRect.movementType = ScrollRect.MovementType.Elastic;
         }
-        else
+        if(scrollRect.verticalScrollbar.value == 0)
         {
             scrollRect.movementType = ScrollRect.MovementType.Unrestricted;
         }
