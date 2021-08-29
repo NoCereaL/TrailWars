@@ -12,8 +12,11 @@ public class ABDeathEndless : MonoBehaviour
     public GameObject particleController;
     public Rigidbody2D rb;
 
+    //Play Again Canvas
     public Text score;
     public GameObject playAgainCanvas;
+    public GameObject camera;
+    public GameObject particalController;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +43,15 @@ public class ABDeathEndless : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = Vector2.zero;
-            ABEndlessScore.ABScore = 0;
+            //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
 
             //Play Again
-            Time.timeScale = 0;
+            camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
             score.text = ABEndlessScore.ABScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
+            //StartCoroutine(PauseGame());
         }
     }
 
@@ -60,13 +65,21 @@ public class ABDeathEndless : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = Vector2.zero;
-            ABEndlessScore.ABScore = 0;
+            //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
 
             //Play Again
-            Time.timeScale = 0;
+            camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
             score.text = ABEndlessScore.ABScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
+            //StartCoroutine(PauseGame());
         }
+    }
+
+    IEnumerator PauseGame()
+    {
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0;
     }
 }

@@ -655,6 +655,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playAgainCanvas: {fileID: 514836603}
+  camera: {fileID: 229620973990693756}
+  cameraHolder: {fileID: 4238356439836593424}
+  player: {fileID: 229620973675490561}
 --- !u!1 &520698210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1280,11 @@ Transform:
   m_Father: {fileID: 2146491282}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1354578317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6561814347429647571, guid: 0b47caff9766543999ebae8e51a2baf0, type: 3}
+  m_PrefabInstance: {fileID: 312264864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1380043946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5849056, g: 0.5766287, b: 0.5766287, a: 0.5254902}
+  m_Color: {r: 0.5849056, g: 0.5766287, b: 0.5766287, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3541,6 +3549,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   score: {fileID: 952245895}
   playAgainCanvas: {fileID: 514836603}
+  camera: {fileID: 229620973990693756}
+  particalController: {fileID: 1354578317}
 --- !u!61 &229620973675490564
 BoxCollider2D:
   m_ObjectHideFlags: 0
