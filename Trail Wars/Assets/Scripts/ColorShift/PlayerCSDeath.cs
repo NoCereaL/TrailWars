@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
+using UnityEngine.UI;
 
 public class PlayerCSDeath : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class PlayerCSDeath : MonoBehaviour
     private Vector3 spawnPoint;
     private ParticleSystem particleSystem;
     private GameObject particleController;
+
+    //Play Again Canvas
+    public Text score;
+    public GameObject playAgainCanvas;
+    public GameObject camera;
+    public GameObject particalController;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +41,15 @@ public class PlayerCSDeath : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = new Vector2(0, 0);
-            CSEndlessScore.CSScore = 0;
+            rb.isKinematic = true;
+            //CSEndlessScore.CSScore = 0;
             player.transform.position = spawnPoint;
+
+            //Play Again
+            camera.transform.SetParent(particalController.transform);
+            playAgainCanvas.SetActive(true);
+            score.text = CSEndlessScore.CSScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
         }
     }
 }
