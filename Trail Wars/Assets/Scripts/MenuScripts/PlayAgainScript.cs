@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayAgainScript : MonoBehaviour
 {
     public GameObject playAgainCanvas;
-    public GameObject camera;
+    public GameObject cam;
     public GameObject cameraHolder;
     public GameObject player;
     public Rigidbody2D rb;
@@ -15,7 +15,7 @@ public class PlayAgainScript : MonoBehaviour
         Time.timeScale = 1;
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
-        camera.transform.SetParent(cameraHolder.transform);
+        cam.transform.SetParent(cameraHolder.transform);
         rb.isKinematic = false;
         if(player.GetComponent<PlayerMovement>() != null)
         {
@@ -24,10 +24,6 @@ public class PlayAgainScript : MonoBehaviour
         if (player.GetComponent<PlayerCSMovement>() != null)
         {
             player.GetComponent<PlayerCSMovement>().enabled = true;
-        }
-        if(player.GetComponent<PlayerDBMovement>() != null)
-        {
-            player.GetComponent<PlayerDBMovement>().enabled = true;
         }
     }
 }

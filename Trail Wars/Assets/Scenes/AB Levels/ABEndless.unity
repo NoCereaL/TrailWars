@@ -655,9 +655,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playAgainCanvas: {fileID: 514836603}
-  camera: {fileID: 229620973990693756}
+  cam: {fileID: 229620973990693756}
   cameraHolder: {fileID: 4238356439836593424}
   player: {fileID: 229620973675490561}
+  rb: {fileID: 229620973675490565}
 --- !u!1 &520698210
 GameObject:
   m_ObjectHideFlags: 0
