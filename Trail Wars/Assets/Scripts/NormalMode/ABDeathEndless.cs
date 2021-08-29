@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
+using UnityEngine.UI;
 
 public class ABDeathEndless : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ABDeathEndless : MonoBehaviour
     public ParticleSystem particleSystem;
     public GameObject particleController;
     public Rigidbody2D rb;
+
+    public Text score;
+    public GameObject playAgainCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,11 @@ public class ABDeathEndless : MonoBehaviour
             rb.velocity = Vector2.zero;
             ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+
+            //Play Again
+            Time.timeScale = 0;
+            playAgainCanvas.SetActive(true);
+            score.text = ABEndlessScore.ABScore + "";
         }
     }
 
@@ -53,6 +62,11 @@ public class ABDeathEndless : MonoBehaviour
             rb.velocity = Vector2.zero;
             ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+
+            //Play Again
+            Time.timeScale = 0;
+            playAgainCanvas.SetActive(true);
+            score.text = ABEndlessScore.ABScore + "";
         }
     }
 }
