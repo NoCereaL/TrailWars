@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayAgainScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayAgainScript : MonoBehaviour
     public GameObject cameraHolder;
     public GameObject player;
     public Rigidbody2D rb;
+
     public void PlayAgain()
     {
         playAgainCanvas.SetActive(false);
@@ -25,5 +27,10 @@ public class PlayAgainScript : MonoBehaviour
         {
             player.GetComponent<PlayerCSMovement>().enabled = true;
         }
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }
