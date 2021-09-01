@@ -2,14 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
+using UnityEngine.UI;
 
 public class PlayerDBDeath : MonoBehaviour
 {
     public GameObject player;
     public Rigidbody2D rb;
-    public Vector3 spawnPoint;
-    public ParticleSystem particleSystem;
-    public GameObject particleController;
+    private Vector3 spawnPoint;
+    private ParticleSystem particleSystem;
+    private GameObject particleController;
+
+    //Play Again Canvas
+    public Text score;
+    public GameObject playAgainCanvas;
+    public GameObject camera;
+    public GameObject particalController;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +41,14 @@ public class PlayerDBDeath : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = new Vector2(0, 0);
+            rb.isKinematic = true;
             player.transform.position = spawnPoint;
+
+            //Play Again
+            camera.transform.SetParent(particalController.transform);
+            playAgainCanvas.SetActive(true);
+            score.text = CSEndlessScore.CSScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
         }
     }
 }
