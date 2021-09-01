@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public AudioSource buttonClick;
+    private GameObject menu;
+    public GameObject credits;
     // Start is called before the first frame update
     void Start()
     {
-        
+        menu = this.gameObject;
     }
 
     // Update is called once per frame
@@ -34,6 +36,20 @@ public class MenuScript : MonoBehaviour
     {
         buttonClick.Play();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void Credits()
+    {
+        menu.SetActive(false);
+        credits.SetActive(true);
+        buttonClick.Play();
+    }
+
+    public void CloseCredits()
+    {
+        menu.SetActive(true);
+        credits.SetActive(false);
+        buttonClick.Play();
     }
 
     public void Quit()
