@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 7087517774824395685}
   - component: {fileID: 4667911360552795347}
   - component: {fileID: 4346343685618249071}
+  - component: {fileID: 4576331674613519148}
   m_Layer: 0
   m_Name: CSPlayer
   m_TagString: Player
@@ -276,6 +277,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7087517774824395676}
   rb: {fileID: 7087517774824395672}
+  score: {fileID: 0}
+  playAgainCanvas: {fileID: 0}
+  camera: {fileID: 0}
+  particalController: {fileID: 0}
 --- !u!114 &7087517774824395675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,3 +362,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b58fd25bc5d3445696aae0f9542cb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4576331674613519148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087517774824395676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f26ed33068d64fb3b213330d09f8702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 

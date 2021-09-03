@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6236306533301073427}
   - component: {fileID: 6236306533301073454}
   - component: {fileID: 199957885879636240}
+  - component: {fileID: 4636730693938980771}
   m_Layer: 0
   m_Name: DBPlayer
   m_TagString: Player
@@ -141,9 +142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6236306533301073430}
   rb: {fileID: 6236306533301073426}
-  spawnPoint: {x: 0, y: 45, z: -1}
-  particleSystem: {fileID: 0}
-  particleController: {fileID: 0}
+  score: {fileID: 0}
+  playAgainCanvas: {fileID: 0}
+  camera: {fileID: 0}
+  particalController: {fileID: 0}
 --- !u!114 &6236306533301073425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +231,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &4636730693938980771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236306533301073430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f26ed33068d64fb3b213330d09f8702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 
 --- !u!1 &6236306534048038378
 GameObject:
   m_ObjectHideFlags: 0
