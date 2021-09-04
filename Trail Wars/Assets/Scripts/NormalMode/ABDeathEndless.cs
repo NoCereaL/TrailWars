@@ -52,6 +52,7 @@ public class ABDeathEndless : MonoBehaviour
             score.text = ABEndlessScore.ABScore + "";
             player.GetComponent<PlayerMovement>().enabled = false;
             //StartCoroutine(PauseGame());
+            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
         }
     }
 
@@ -74,6 +75,9 @@ public class ABDeathEndless : MonoBehaviour
             score.text = ABEndlessScore.ABScore + "";
             player.GetComponent<PlayerMovement>().enabled = false;
             //StartCoroutine(PauseGame());
+
+            //Currency Rewards
+            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
         }
     }
 

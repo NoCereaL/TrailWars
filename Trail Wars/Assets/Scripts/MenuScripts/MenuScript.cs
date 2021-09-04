@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour
     public AudioSource buttonClick;
     private GameObject menu;
     public GameObject credits;
+    public GameObject storePage;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,13 +43,23 @@ public class MenuScript : MonoBehaviour
     {
         menu.SetActive(false);
         credits.SetActive(true);
+        storePage.SetActive(false);
         buttonClick.Play();
     }
 
-    public void CloseCredits()
+    public void CloseAll()
     {
         menu.SetActive(true);
         credits.SetActive(false);
+        storePage.SetActive(false);
+        buttonClick.Play();
+    }
+
+    public void StorePage()
+    {
+        menu.SetActive(false);
+        credits.SetActive(false);
+        storePage.SetActive(true);
         buttonClick.Play();
     }
 

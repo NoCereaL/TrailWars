@@ -24,6 +24,7 @@ public class NextLevel : MonoBehaviour
         if(collision.collider.tag == "FinishLine")
         {
             Vibration.VibrateNope();
+            GlobalCurrency.AddCurrency(5);
             SceneManager.LoadScene(level);
         }
     }
