@@ -2783,3 +2783,258 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006841 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.436 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 255.5 MB.
+System memory in use after: 255.6 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 4140.
+Total: 2.213667 ms (FindLiveObjects: 0.289125 ms CreateObjectMapping: 0.080000 ms MarkObjects: 1.720417 ms  DeleteObjects: 0.123250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 45 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.8 MB.
+System memory in use after: 191.9 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4140.
+Total: 19.487208 ms (FindLiveObjects: 1.233750 ms CreateObjectMapping: 0.152708 ms MarkObjects: 17.693083 ms  DeleteObjects: 0.406208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1102.872275 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055c820d89787a1d97fe2b11b27f45d1') in 0.144850 seconds 
+  Import took 0.170076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.120660 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e784cc237e844cc096b47a98a1b1584') in 0.006602 seconds 
+  Import took 0.015866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.510236 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9316f0ceccbd2a2c6adef3d223120a8c') in 0.005333 seconds 
+  Import took 0.014059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.859951 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be176a7c12e6e412cfa0f8f83bdbc9e') in 0.004983 seconds 
+  Import took 0.013387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.052138 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd37c686f87c8c0231309fb08e4f7375') in 0.010565 seconds 
+  Import took 0.018837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.910337 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7999a84ae9e564f3f0a4d1518e1815a9') in 0.006619 seconds 
+  Import took 0.014731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.146536 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f57ede65414532262e20130d7853bc') in 0.004427 seconds 
+  Import took 0.012613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.164479 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0710c225724971ece4cecca04dc954') in 0.004685 seconds 
+  Import took 0.012924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.408287 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030b021c12c437366e8caf152620f676') in 0.005695 seconds 
+  Import took 0.015570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.543778 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91bbb943e433e8faf370527e71ad9e8') in 0.004558 seconds 
+  Import took 0.012493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.830189 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b2eca0b56eec0f930914071c0ffc38') in 0.005217 seconds 
+  Import took 0.012550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.662917 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5486336010740252faa0e7e8e545ec4') in 0.004644 seconds 
+  Import took 0.013542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.790130 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b760df268b0429f4ecc92679dd57aee') in 0.005033 seconds 
+  Import took 0.013435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.398161 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b48d01fa5da3046f36beeff94752da') in 0.004106 seconds 
+  Import took 0.012022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.617352 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb705738dd648466eb4c0fe0ffb3fa9') in 0.005342 seconds 
+  Import took 0.014148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.456740 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6203269d96bc2dc1b3ec61350ae09224') in 0.005260 seconds 
+  Import took 0.015081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.833707 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '028331d8dc808c3dca600be892f79dcf') in 0.004576 seconds 
+  Import took 0.011912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.097402 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad289bd04020617dd6b892bae03b004') in 0.007559 seconds 
+  Import took 0.020949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.607354 seconds.
+  path: Assets/Scenes/AB Levels/ABEndless.unity
+  artifactKey: Guid(8252f166200da4bb481a7e4edfd84b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AB Levels/ABEndless.unity using Guid(8252f166200da4bb481a7e4edfd84b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88274a398e7a516882344ade53154f5a') in 0.003014 seconds 
+  Import took 0.013815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000670 seconds.
+  path: Assets/Scenes/AB Levels/ABEndless.unity
+  artifactKey: Guid(8252f166200da4bb481a7e4edfd84b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AB Levels/ABEndless.unity using Guid(8252f166200da4bb481a7e4edfd84b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88274a398e7a516882344ade53154f5a') in 0.001371 seconds 
+  Import took 0.009716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.922449 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cb0e016b3bb6f727bae1677843c4cd') in 0.013386 seconds 
+  Import took 0.021589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.413638 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf39761871fee618f589a787cffeff8') in 0.007759 seconds 
+  Import took 0.016465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 979.257417 seconds.
+  path: Assets/Scenes/LogoCreator.unity
+  artifactKey: Guid(ba3fa28fb9fba402f96112c98063ef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LogoCreator.unity using Guid(ba3fa28fb9fba402f96112c98063ef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b089eb5ffe545fb88ce318b4659a03') in 0.007215 seconds 
+  Import took 0.040611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.370229 seconds.
+  path: Assets/Scenes/CSLevel Selector.unity
+  artifactKey: Guid(18608a1e27c204b94a38794c1612596d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CSLevel Selector.unity using Guid(18608a1e27c204b94a38794c1612596d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f81ad6b6bee9524311718e512f71e7d') in 0.002501 seconds 
+  Import took 0.012222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1186.873807 seconds.
+  path: Assets/Scenes/LogoCreator.unity
+  artifactKey: Guid(ba3fa28fb9fba402f96112c98063ef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LogoCreator.unity using Guid(ba3fa28fb9fba402f96112c98063ef41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3610ed2fbb9491230492011a1c897e') in 0.006192 seconds 
+  Import took 0.025148 seconds .
+
