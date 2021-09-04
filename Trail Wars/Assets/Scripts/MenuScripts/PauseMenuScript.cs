@@ -60,6 +60,8 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
     {
         buttonClick.Play();
         Time.timeScale = 1;
+        ABEndlessScore.ABScore = 0;
+        CSEndlessScore.CSScore = 0;
         SceneManager.LoadScene(1);
     }
 
@@ -67,6 +69,8 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
     {
         buttonClick.Play();
         Time.timeScale = 1;
+        ABEndlessScore.ABScore = 0;
+        CSEndlessScore.CSScore = 0;
         SceneManager.LoadScene(0);
     }
 
@@ -79,6 +83,8 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
     public void ToNextLevel()
     {
         PlayerPrefs.SetInt(levelName, 1);
+        ABEndlessScore.ABScore = 0;
+        CSEndlessScore.CSScore = 0;
         SceneManager.LoadScene(levelName);
     }
 
