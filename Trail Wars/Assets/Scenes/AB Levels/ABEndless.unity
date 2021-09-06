@@ -1961,6 +1961,7 @@ GameObject:
   - component: {fileID: 1321836288516830500}
   - component: {fileID: 1989681272042601581}
   - component: {fileID: 229620973675490562}
+  - component: {fileID: 229620973675490563}
   m_Layer: 0
   m_Name: ABPlayerEndless
   m_TagString: Player
@@ -1989,6 +1990,21 @@ MonoBehaviour:
   playAgainCanvas: {fileID: 1871141252}
   camera: {fileID: 229620973990693756}
   particalController: {fileID: 1354578317}
+--- !u!114 &229620973675490563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229620973675490561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5bfbaaf782449afbff8f9a39b99600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  R: 0
+  G: 0
+  B: 0
 --- !u!61 &229620973675490564
 BoxCollider2D:
   m_ObjectHideFlags: 0
