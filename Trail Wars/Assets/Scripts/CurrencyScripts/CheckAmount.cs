@@ -36,6 +36,10 @@ public class CheckAmount : MonoBehaviour
         {
             button.interactable = true;
         }
+        if(PlayerPrefs.GetInt("Diamond") <= itemAmount && PlayerPrefs.GetInt(itemName) == 0)
+        {
+            button.interactable = false;
+        }
         if (PlayerPrefs.GetInt(itemName) == 1)          //if you own then you can equip
         {
             button.interactable = true;
