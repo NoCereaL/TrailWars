@@ -5,9 +5,9 @@ using UnityEngine;
 public class ChangePlayerColor : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-    public float R;
-    public float G;
-    public float B;
+    private float R;
+    private float G;
+    private float B;
     // Start is called before the first frame update
     void Start()
     {
