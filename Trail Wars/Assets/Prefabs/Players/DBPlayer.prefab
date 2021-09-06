@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 4636730693938980771}
   - component: {fileID: 4739875009822672245}
   - component: {fileID: 3327105057702252680}
+  - component: {fileID: 7212146823296666655}
   m_Layer: 0
   m_Name: DBPlayer
   m_TagString: Player
@@ -270,6 +271,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c3048bcb9474a5eaf0e7220eeee2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7212146823296666655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236306533301073430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425e4d0402d4a4369af2a5602bff002d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteArray:
+  - {fileID: -2413806693520163455, guid: 8ecc53883a9af406f95245ac9452813b, type: 3}
+  - {fileID: 7482667652216324306, guid: d269cfa529d294816b4c77ec05560f4c, type: 3}
+  - {fileID: 21300000, guid: 6b1c34a2b08624fa396303f91ce79d74, type: 3}
+  spriteRenderer: {fileID: 6236306533301073431}
 --- !u!1 &6236306534048038378
 GameObject:
   m_ObjectHideFlags: 0

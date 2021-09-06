@@ -451,6 +451,7 @@ MonoBehaviour:
   equipped: {fileID: 680510766}
   owned: {fileID: 1170208471}
   item: {fileID: 1634012977}
+  itemShape: {fileID: 0}
 --- !u!82 &70067650
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1696,6 +1697,7 @@ MonoBehaviour:
   equipped: {fileID: 1505576867}
   owned: {fileID: 1556315430}
   item: {fileID: 493672511}
+  itemShape: {fileID: 0}
 --- !u!114 &208051424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,7 +1805,7 @@ GameObject:
   - component: {fileID: 217735335}
   - component: {fileID: 217735341}
   m_Layer: 5
-  m_Name: Triangle
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1870,6 +1872,7 @@ MonoBehaviour:
   equipped: {fileID: 1643258082}
   owned: {fileID: 1589402208}
   item: {fileID: 0}
+  itemShape: {fileID: 217735341}
 --- !u!82 &217735337
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2022,8 +2025,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EquipColor, Assembly-CSharp
+      - m_Target: {fileID: 217735341}
+        m_TargetAssemblyTypeName: EquipShape, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 1
         m_Arguments:
@@ -2394,7 +2397,7 @@ GameObject:
   - component: {fileID: 278447667}
   - component: {fileID: 278447673}
   m_Layer: 5
-  m_Name: Circle
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,6 +2464,7 @@ MonoBehaviour:
   equipped: {fileID: 1893442813}
   owned: {fileID: 1858525777}
   item: {fileID: 0}
+  itemShape: {fileID: 278447673}
 --- !u!82 &278447669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2613,8 +2617,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EquipColor, Assembly-CSharp
+      - m_Target: {fileID: 278447673}
+        m_TargetAssemblyTypeName: EquipShape, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 1
         m_Arguments:
@@ -3768,7 +3772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &405621811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5252,6 +5256,7 @@ MonoBehaviour:
   equipped: {fileID: 1386420863}
   owned: {fileID: 661794325}
   item: {fileID: 1069247068}
+  itemShape: {fileID: 0}
 --- !u!82 &595241517
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7427,6 +7432,7 @@ MonoBehaviour:
   equipped: {fileID: 703408776}
   owned: {fileID: 764399283}
   item: {fileID: 203626393}
+  itemShape: {fileID: 0}
 --- !u!82 &839616608
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8945,6 +8951,7 @@ MonoBehaviour:
   equipped: {fileID: 1396421492}
   owned: {fileID: 1566593745}
   item: {fileID: 59033858}
+  itemShape: {fileID: 0}
 --- !u!82 &1070778503
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9230,6 +9237,7 @@ MonoBehaviour:
   equipped: {fileID: 1485455138}
   owned: {fileID: 1194190530}
   item: {fileID: 650672131}
+  itemShape: {fileID: 0}
 --- !u!82 &1103155090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9814,7 +9822,7 @@ GameObject:
   - component: {fileID: 1140587948}
   - component: {fileID: 1140587954}
   m_Layer: 5
-  m_Name: Square
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9881,6 +9889,7 @@ MonoBehaviour:
   equipped: {fileID: 291061208}
   owned: {fileID: 593909187}
   item: {fileID: 0}
+  itemShape: {fileID: 1140587954}
 --- !u!82 &1140587950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10033,8 +10042,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EquipColor, Assembly-CSharp
+      - m_Target: {fileID: 1140587954}
+        m_TargetAssemblyTypeName: EquipShape, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 1
         m_Arguments:
@@ -10769,6 +10778,7 @@ MonoBehaviour:
   equipped: {fileID: 1423232982}
   owned: {fileID: 1162502174}
   item: {fileID: 257907428}
+  itemShape: {fileID: 0}
 --- !u!82 &1220514096
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11837,6 +11847,7 @@ MonoBehaviour:
   equipped: {fileID: 1263871}
   owned: {fileID: 2069030958}
   item: {fileID: 1468808176}
+  itemShape: {fileID: 0}
 --- !u!1 &1343246266
 GameObject:
   m_ObjectHideFlags: 0
@@ -15098,6 +15109,7 @@ MonoBehaviour:
   equipped: {fileID: 957538601}
   owned: {fileID: 1953742173}
   item: {fileID: 194555430}
+  itemShape: {fileID: 0}
 --- !u!82 &1879617636
 AudioSource:
   m_ObjectHideFlags: 0

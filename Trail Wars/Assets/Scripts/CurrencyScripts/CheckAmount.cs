@@ -16,6 +16,7 @@ public class CheckAmount : MonoBehaviour
     public GameObject owned;
 
     public EquipColor item;
+    public EquipShape itemShape;
     // Start is called before the first frame update
     void Start()
     {

@@ -19,6 +19,6 @@ public class EquipShape : MonoBehaviour
 
     public void Equip()
     {
-        PlayerPrefs.SetString("PlayerShape", itemName.name);
+        PlayerPrefs.SetInt("PlayerShape", int.Parse(itemName.name));
     }
 }
