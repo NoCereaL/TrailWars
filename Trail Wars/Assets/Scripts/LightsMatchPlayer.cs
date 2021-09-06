@@ -18,5 +18,10 @@ public class LightsMatchPlayer : MonoBehaviour
     void Update()
     {
         light2D.color = spriteRenderer.color;
+
+        if(spriteRenderer.color == Color.black)
+        {
+            light2D.color = Color.white;
+        }
     }
 }

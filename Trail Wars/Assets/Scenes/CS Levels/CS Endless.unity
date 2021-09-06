@@ -3278,6 +3278,7 @@ GameObject:
   - component: {fileID: 2017021091}
   - component: {fileID: 2493916103275176917}
   - component: {fileID: 6776434545070453353}
+  - component: {fileID: 2017021089}
   m_Layer: 0
   m_Name: CSPlayer
   m_TagString: Player
@@ -3419,6 +3420,23 @@ MonoBehaviour:
   playAgainCanvas: {fileID: 296977134}
   camera: {fileID: 1264626407}
   particalController: {fileID: 574858724}
+--- !u!114 &2017021089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017021082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425e4d0402d4a4369af2a5602bff002d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteArray:
+  - {fileID: -2413806693520163455, guid: 8ecc53883a9af406f95245ac9452813b, type: 3}
+  - {fileID: 7482667652216324306, guid: d269cfa529d294816b4c77ec05560f4c, type: 3}
+  - {fileID: 21300000, guid: 6b1c34a2b08624fa396303f91ce79d74, type: 3}
+  spriteRenderer: {fileID: 2017021083}
 --- !u!114 &2017021090
 MonoBehaviour:
   m_ObjectHideFlags: 0
