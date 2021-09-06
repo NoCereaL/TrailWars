@@ -9,6 +9,7 @@ public class MenuScript : MonoBehaviour
     private GameObject menu;
     public GameObject credits;
     public GameObject storePage;
+    public GameObject storePageShapes;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class MenuScript : MonoBehaviour
         menu.SetActive(false);
         credits.SetActive(true);
         storePage.SetActive(false);
+        storePageShapes.SetActive(false);
         buttonClick.Play();
     }
 
@@ -52,6 +54,7 @@ public class MenuScript : MonoBehaviour
         menu.SetActive(true);
         credits.SetActive(false);
         storePage.SetActive(false);
+        storePageShapes.SetActive(false);
         buttonClick.Play();
     }
 
@@ -60,6 +63,16 @@ public class MenuScript : MonoBehaviour
         menu.SetActive(false);
         credits.SetActive(false);
         storePage.SetActive(true);
+        storePageShapes.SetActive(false);
+        buttonClick.Play();
+    }
+
+    public void StorePageShapes()
+    {
+        menu.SetActive(false);
+        credits.SetActive(false);
+        storePage.SetActive(false);
+        storePageShapes.SetActive(true);
         buttonClick.Play();
     }
 
