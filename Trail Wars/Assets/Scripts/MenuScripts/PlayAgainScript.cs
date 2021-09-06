@@ -31,6 +31,8 @@ public class PlayAgainScript : MonoBehaviour
 
     public void BackToMenu()
     {
+        ABEndlessScore.ABScore = 0;
+        CSEndlessScore.CSScore = 0;
         SceneManager.LoadScene("Main Menu");
     }
 }
