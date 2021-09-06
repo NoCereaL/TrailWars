@@ -4126,3 +4126,41 @@ Received Import Request.
 Start importing Assets/Shapes/4.png using Guid(46857d1f38f8847f89fa11257cbcc626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71a80a36433506d886641b27c34321c') in 0.012419 seconds 
   Import took 0.021709 seconds .
 
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 12.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 45 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.9 MB.
+System memory in use after: 214.0 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4526.
+Total: 19.375041 ms (FindLiveObjects: 1.091542 ms CreateObjectMapping: 0.093041 ms MarkObjects: 18.010250 ms  DeleteObjects: 0.179792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 340.738929 seconds.
+  path: Assets/Shapes/1.png
+  artifactKey: Guid(d269cfa529d294816b4c77ec05560f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapes/1.png using Guid(d269cfa529d294816b4c77ec05560f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f435d436bcd436911506c38a939d4bb') in 0.067163 seconds 
+  Import took 0.118834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/Shapes/4.png
+  artifactKey: Guid(46857d1f38f8847f89fa11257cbcc626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapes/4.png using Guid(46857d1f38f8847f89fa11257cbcc626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45aec55b64d767fc399f41b92d019fc3') in 0.010490 seconds 
+  Import took 0.019671 seconds .
+
