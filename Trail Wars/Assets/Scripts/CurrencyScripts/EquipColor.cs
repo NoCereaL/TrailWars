@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EquipColor : MonoBehaviour
 {
     private Image itemImage;
-    public float red;
+    public Color32 color;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +16,13 @@ public class EquipColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        red = itemImage.color.r;
+        color = itemImage.color;
     }
 
     public void Equip()
     {
-        PlayerPrefs.SetFloat("R", (byte)itemImage.color.r);
-        PlayerPrefs.SetFloat("G", (byte)itemImage.color.g);
-        PlayerPrefs.SetFloat("B", (byte)itemImage.color.b);
+        PlayerPrefs.SetFloat("R", color.r);
+        PlayerPrefs.SetFloat("G", color.g);
+        PlayerPrefs.SetFloat("B", color.b);
     }
 }

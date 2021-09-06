@@ -14,6 +14,8 @@ public class CheckAmount : MonoBehaviour
     public GameObject Text;
     public GameObject equipped;
     public GameObject owned;
+
+    public EquipColor item;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,15 @@ public class CheckAmount : MonoBehaviour
             DiamondImg.SetActive(false);
             Text.SetActive(false);
             owned.SetActive(true);
+        }
+        if (item.color.r == PlayerPrefs.GetFloat("R") && item.color.g == PlayerPrefs.GetFloat("G") && item.color.b == PlayerPrefs.GetFloat("B"))
+        {
+            owned.SetActive(false);
+            equipped.SetActive(true);
+        }
+        else
+        {
+            equipped.SetActive(false);
         }
     }
 }
