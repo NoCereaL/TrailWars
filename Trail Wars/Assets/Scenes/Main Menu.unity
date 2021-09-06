@@ -1277,7 +1277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199449903
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1801,9 +1801,9 @@ GameObject:
   - component: {fileID: 217735339}
   - component: {fileID: 217735338}
   - component: {fileID: 217735337}
-  - component: {fileID: 217735336}
   - component: {fileID: 217735335}
   - component: {fileID: 217735341}
+  - component: {fileID: 217735342}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -1850,29 +1850,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemAmount: 0
   amountText: {fileID: 1456146488}
---- !u!114 &217735336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217735333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125d937e312ed4eac815494d8675f288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: 
-  itemAmount: 30
-  lockIcon: {fileID: 759220392}
-  button: {fileID: 217735338}
-  amountText: {fileID: 1456146488}
-  DiamondImg: {fileID: 990722608}
-  Text: {fileID: 1456146486}
-  equipped: {fileID: 1643258082}
-  owned: {fileID: 1589402208}
-  item: {fileID: 0}
-  itemShape: {fileID: 217735341}
 --- !u!82 &217735337
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2088,6 +2065,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: {fileID: 0}
+--- !u!114 &217735342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217735333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6e555704e6940ba9cb9b8ca52a3a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemAmount: 30
+  lockIcon: {fileID: 759220392}
+  button: {fileID: 217735338}
+  amountText: {fileID: 1456146488}
+  DiamondImg: {fileID: 990722608}
+  Text: {fileID: 1456146486}
+  equipped: {fileID: 1643258082}
+  owned: {fileID: 1589402208}
+  item: {fileID: 0}
+  itemShape: {fileID: 217735341}
 --- !u!1 &229106044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,9 +2393,9 @@ GameObject:
   - component: {fileID: 278447671}
   - component: {fileID: 278447670}
   - component: {fileID: 278447669}
-  - component: {fileID: 278447668}
   - component: {fileID: 278447667}
   - component: {fileID: 278447673}
+  - component: {fileID: 278447674}
   m_Layer: 5
   m_Name: 0
   m_TagString: Untagged
@@ -2440,31 +2440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7393cde6f26a4bfba83e5422ebd1b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemAmount: 0
+  itemAmount: -1
   amountText: {fileID: 1117004139}
---- !u!114 &278447668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278447665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125d937e312ed4eac815494d8675f288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: 
-  itemAmount: 10
-  lockIcon: {fileID: 1486500162}
-  button: {fileID: 278447670}
-  amountText: {fileID: 1117004139}
-  DiamondImg: {fileID: 199449902}
-  Text: {fileID: 1117004137}
-  equipped: {fileID: 1893442813}
-  owned: {fileID: 1858525777}
-  item: {fileID: 0}
-  itemShape: {fileID: 278447673}
 --- !u!82 &278447669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2600,7 +2577,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 278447671}
   m_OnClick:
     m_PersistentCalls:
@@ -2680,6 +2657,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: {fileID: 0}
+--- !u!114 &278447674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278447665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6e555704e6940ba9cb9b8ca52a3a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemAmount: 0
+  lockIcon: {fileID: 1486500162}
+  button: {fileID: 278447670}
+  amountText: {fileID: 1117004139}
+  DiamondImg: {fileID: 199449902}
+  Text: {fileID: 1117004137}
+  equipped: {fileID: 1893442813}
+  owned: {fileID: 1858525777}
+  item: {fileID: 0}
+  itemShape: {fileID: 278447673}
 --- !u!1 &288551641
 GameObject:
   m_ObjectHideFlags: 0
@@ -9536,7 +9536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1117004138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9818,7 +9818,7 @@ GameObject:
   - component: {fileID: 1140587952}
   - component: {fileID: 1140587951}
   - component: {fileID: 1140587950}
-  - component: {fileID: 1140587949}
+  - component: {fileID: 1140587955}
   - component: {fileID: 1140587948}
   - component: {fileID: 1140587954}
   m_Layer: 5
@@ -9867,29 +9867,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemAmount: 0
   amountText: {fileID: 339923134}
---- !u!114 &1140587949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140587946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125d937e312ed4eac815494d8675f288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: 
-  itemAmount: 20
-  lockIcon: {fileID: 1801829015}
-  button: {fileID: 1140587951}
-  amountText: {fileID: 339923134}
-  DiamondImg: {fileID: 1313456108}
-  Text: {fileID: 339923132}
-  equipped: {fileID: 291061208}
-  owned: {fileID: 593909187}
-  item: {fileID: 0}
-  itemShape: {fileID: 1140587954}
 --- !u!82 &1140587950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10105,6 +10082,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: {fileID: 0}
+--- !u!114 &1140587955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140587946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6e555704e6940ba9cb9b8ca52a3a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemAmount: 20
+  lockIcon: {fileID: 1801829015}
+  button: {fileID: 1140587951}
+  amountText: {fileID: 339923134}
+  DiamondImg: {fileID: 1313456108}
+  Text: {fileID: 339923132}
+  equipped: {fileID: 291061208}
+  owned: {fileID: 593909187}
+  item: {fileID: 0}
+  itemShape: {fileID: 1140587954}
 --- !u!1 &1162502174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12879,7 +12879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1486500163
 RectTransform:
   m_ObjectHideFlags: 0
