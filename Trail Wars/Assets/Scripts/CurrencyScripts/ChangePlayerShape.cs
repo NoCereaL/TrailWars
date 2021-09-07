@@ -15,16 +15,18 @@ public class ChangePlayerShape : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*spriteRenderer.sprite = sprite;
-        for (int i = 0; i >= spriteArray.Length; i++)
+        spriteRenderer.sprite = sprite;
+        for (int i = 0; i <= spriteArray.Length; i++)
         {
             if (PlayerPrefs.GetInt("PlayerShape") == i)
             {
                 sprite = spriteArray[i];
                 spriteRenderer.sprite = sprite;
             }
-        }*/
+        }
 
+
+        /*
         if (PlayerPrefs.GetInt("PlayerShape") == 0)
         {
             sprite = spriteArray[0];
@@ -39,6 +41,6 @@ public class ChangePlayerShape : MonoBehaviour
         {
             sprite = spriteArray[2];
             spriteRenderer.sprite = sprite;
-        }
+        }*/
     }
 }
