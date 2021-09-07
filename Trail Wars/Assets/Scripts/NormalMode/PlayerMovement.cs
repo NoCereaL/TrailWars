@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float jumpHeight;
     public float maxSpeed;
+    public float maxRotationalSpeed;
     public float velocity;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+            int[] directions = { -2, -1, 1, 2 };
+            int randomNum = Random.Range(0, 3);
+            rb.AddTorque(directions[randomNum]);
         }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {

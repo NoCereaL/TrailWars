@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
+using UnityEngine.UI;
 
 public class ABGiveScore : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class ABGiveScore : MonoBehaviour
     private GameObject particleController;
     private Rigidbody2D rb;
     private Vector3 spawnPoint;
+
+    //Play Again Canvas
+    public Text score;
+    public GameObject playAgainCanvas;
+    public GameObject camera;
+    public GameObject particalController;
 
     private void Awake()
     {
@@ -34,8 +41,18 @@ public class ABGiveScore : MonoBehaviour
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = Vector2.zero;
-            ABEndlessScore.ABScore = 0;
+            //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+
+            //Play Again
+            camera.transform.SetParent(particalController.transform);
+            playAgainCanvas.SetActive(true);
+            score.text = ABEndlessScore.ABScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
+            //StartCoroutine(PauseGame());
+
+            //Currency Rewards
+            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
         }
     }
 }

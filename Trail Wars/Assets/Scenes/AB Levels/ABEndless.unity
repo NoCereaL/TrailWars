@@ -2067,6 +2067,7 @@ MonoBehaviour:
   rb: {fileID: 229620973675490565}
   jumpHeight: 10
   maxSpeed: 8
+  maxRotationalSpeed: 0
   velocity: 0
 --- !u!4 &229620973675490567
 Transform:
@@ -2729,6 +2730,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5396788ee2984124a3df49c0a84bf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 1871141253}
+  playAgainCanvas: {fileID: 1871141252}
+  camera: {fileID: 229620973990693756}
+  particalController: {fileID: 1354578317}
 --- !u!114 &1989681272042601581
 MonoBehaviour:
   m_ObjectHideFlags: 0
