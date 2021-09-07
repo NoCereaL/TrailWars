@@ -8,6 +8,7 @@ public class BuyItemScript : MonoBehaviour
     private string itemName;
     public int itemAmount;
     public Text amountText;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class BuyItemScript : MonoBehaviour
         {
             PlayerPrefs.SetInt(itemName, 1);
             PlayerPrefs.SetInt("Diamond", PlayerPrefs.GetInt("Diamond") - itemAmount);      //Buy The Item and take away from player cash
+            audioSource.Play();
         }
     }
 }

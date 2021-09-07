@@ -5,6 +5,7 @@ using UnityEngine;
 public class EquipShape : MonoBehaviour
 {
     public GameObject itemName;
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,6 @@ public class EquipShape : MonoBehaviour
     public void Equip()
     {
         PlayerPrefs.SetInt("PlayerShape", int.Parse(itemName.name));
+        audio.Play();
     }
 }

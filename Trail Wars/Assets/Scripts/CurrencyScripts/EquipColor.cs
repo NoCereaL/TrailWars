@@ -7,10 +7,12 @@ public class EquipColor : MonoBehaviour
 {
     private Image itemImage;
     public Color32 color;
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
         itemImage = this.gameObject.GetComponent<Image>();
+        audio = this.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,5 +26,6 @@ public class EquipColor : MonoBehaviour
         PlayerPrefs.SetFloat("R", color.r);
         PlayerPrefs.SetFloat("G", color.g);
         PlayerPrefs.SetFloat("B", color.b);
+        audio.Play();
     }
 }

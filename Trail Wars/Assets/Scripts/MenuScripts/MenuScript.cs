@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public AudioSource buttonClick;
-    private GameObject menu;
+    public GameObject menu;
     public GameObject credits;
     public GameObject storePage;
     public GameObject storePageShapes;
@@ -14,7 +14,7 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menu = this.gameObject;
+        //menu = this.gameObject;
     }
 
     // Update is called once per frame
