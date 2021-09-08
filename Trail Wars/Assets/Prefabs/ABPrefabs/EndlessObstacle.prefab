@@ -286,6 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e046ad1323f494ebf712690afb7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingObject: {fileID: 5241326010993525505}
+  rotatingObject: {fileID: 5228640774662766232, guid: 4a451d5476c634186b7e235e4f7f7182, type: 3}
 --- !u!114 &581446226746516707
 MonoBehaviour:
   m_ObjectHideFlags: 0

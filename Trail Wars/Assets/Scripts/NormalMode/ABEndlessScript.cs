@@ -11,6 +11,8 @@ public class ABEndlessScript : MonoBehaviour
     private Vector3 spawnPoint;
 
     private GameObject gameContainer;
+    public GameObject movingObject;
+    public GameObject rotatingObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +38,23 @@ public class ABEndlessScript : MonoBehaviour
     {
        if(player.position.y > obstacle.position.y - 4)
         {
-            Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
-            this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            if(ABEndlessScore.ABScore == 10)
+            {
+                //Instantiate(rotatingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
+                //this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            }
+            if(ABEndlessScore.ABScore % 10 == 0)
+            {
+                Instantiate(rotatingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
+                this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            }
+            else {
+                Instantiate(movingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
+                this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            }
+
+            //Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
+            //this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
         }
     }
 }

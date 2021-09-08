@@ -11,6 +11,7 @@ public class ABGiveScore : MonoBehaviour
     private GameObject particleController;
     private Rigidbody2D rb;
     private Vector3 spawnPoint;
+    public AudioSource deathSound;
 
     //Play Again Canvas
     public Text score;
@@ -43,6 +44,7 @@ public class ABGiveScore : MonoBehaviour
             rb.velocity = Vector2.zero;
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+            deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

@@ -2256,7 +2256,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1f47c4aad5f14a138bf7c0467396b25, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2894,6 +2894,8 @@ GameObject:
   - component: {fileID: 1778561655369724444}
   - component: {fileID: 7380650090391214277}
   - component: {fileID: 1778561655369724519}
+  - component: {fileID: 1778561655369724520}
+  - component: {fileID: 1778561655369724521}
   m_Layer: 0
   m_Name: ScoreZone
   m_TagString: obstacle
@@ -2913,10 +2915,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5396788ee2984124a3df49c0a84bf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: {fileID: 1778561655369724520}
   score: {fileID: 1871141253}
   playAgainCanvas: {fileID: 1871141252}
   camera: {fileID: 229620973990693756}
   particalController: {fileID: 1354578317}
+--- !u!82 &1778561655369724520
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778561655369724518}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c1f47c4aad5f14a138bf7c0467396b25, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1778561655369724521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778561655369724518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb62ea687009a4961ad45eacd24dcf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1989681272042601581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2996,6 +3107,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554823054}
     m_Modifications:
+    - target: {fileID: 3926857938622261666, guid: cc0624932153140df8466b4597f1ebbb, type: 3}
+      propertyPath: movingObject
+      value: 
+      objectReference: {fileID: 5241326010993525505, guid: cc0624932153140df8466b4597f1ebbb, type: 3}
+    - target: {fileID: 3926857938622261666, guid: cc0624932153140df8466b4597f1ebbb, type: 3}
+      propertyPath: rotatingObject
+      value: 
+      objectReference: {fileID: 5228640774662766232, guid: 4a451d5476c634186b7e235e4f7f7182, type: 3}
     - target: {fileID: 5241326010993525505, guid: cc0624932153140df8466b4597f1ebbb, type: 3}
       propertyPath: m_Name
       value: EndlessObstacle
@@ -7818,11 +7937,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778561655369724518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e046ad1323f494ebf712690afb7d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingObject: {fileID: 0}
+  rotatingObject: {fileID: 0}
 --- !u!114 &8500212705528692902
 MonoBehaviour:
   m_ObjectHideFlags: 0
