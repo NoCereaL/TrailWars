@@ -10,6 +10,7 @@ public class PlayAgainScript : MonoBehaviour
     public GameObject cameraHolder;
     public GameObject player;
     public Rigidbody2D rb;
+    public AudioSource audio;
 
     public void PlayAgain()
     {
@@ -27,6 +28,7 @@ public class PlayAgainScript : MonoBehaviour
         {
             player.GetComponent<PlayerCSMovement>().enabled = true;
         }
+        audio.Play();
     }
 
     public void BackToMenu()
@@ -34,5 +36,6 @@ public class PlayAgainScript : MonoBehaviour
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
         SceneManager.LoadScene("Main Menu");
+        audio.Play();
     }
 }

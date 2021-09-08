@@ -13,6 +13,7 @@ public class BuyItemScript : MonoBehaviour
     void Start()
     {
         itemName = this.gameObject.name;
+        Vibration.Init();
     }
 
     void Update()
@@ -26,6 +27,7 @@ public class BuyItemScript : MonoBehaviour
             PlayerPrefs.SetInt(itemName, 1);
             PlayerPrefs.SetInt("Diamond", PlayerPrefs.GetInt("Diamond") - itemAmount);      //Buy The Item and take away from player cash
             audioSource.Play();
+            Vibration.VibrateNope();
         }
     }
 }

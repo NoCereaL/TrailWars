@@ -13,6 +13,7 @@ public class EquipColor : MonoBehaviour
     {
         itemImage = this.gameObject.GetComponent<Image>();
         audio = this.gameObject.GetComponent<AudioSource>();
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -27,5 +28,6 @@ public class EquipColor : MonoBehaviour
         PlayerPrefs.SetFloat("G", color.g);
         PlayerPrefs.SetFloat("B", color.b);
         audio.Play();
+        Vibration.VibratePop();
     }
 }

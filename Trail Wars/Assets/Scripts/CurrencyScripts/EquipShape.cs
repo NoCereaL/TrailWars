@@ -10,6 +10,7 @@ public class EquipShape : MonoBehaviour
     void Start()
     {
         itemName = this.gameObject;
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -22,5 +23,6 @@ public class EquipShape : MonoBehaviour
     {
         PlayerPrefs.SetInt("PlayerShape", int.Parse(itemName.name));
         audio.Play();
+        Vibration.VibratePop();
     }
 }
