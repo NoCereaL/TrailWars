@@ -11,6 +11,7 @@ public class PlayerDBDeath : MonoBehaviour
     private Vector3 spawnPoint;
     private ParticleSystem particleSystem;
     private GameObject particleController;
+    public AudioSource deathSound;
 
     //Play Again Canvas
     public Text score;
@@ -43,6 +44,7 @@ public class PlayerDBDeath : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             rb.isKinematic = true;
             player.transform.position = spawnPoint;
+            deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

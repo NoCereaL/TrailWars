@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CSNextLevel : MonoBehaviour
 {
     public string level;
+    public AudioSource successSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class CSNextLevel : MonoBehaviour
     {
         if (collision.collider.tag == "FinishLine")
         {
+            successSound.Play();
             Vibration.VibrateNope();
             GlobalCurrency.AddCurrency(5);
             SceneManager.LoadScene(level);

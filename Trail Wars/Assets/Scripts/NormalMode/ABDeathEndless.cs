@@ -11,6 +11,7 @@ public class ABDeathEndless : MonoBehaviour
     public ParticleSystem particleSystem;
     public GameObject particleController;
     public Rigidbody2D rb;
+    public AudioSource deathSound;
 
     //Play Again Canvas
     public Text score;
@@ -45,6 +46,7 @@ public class ABDeathEndless : MonoBehaviour
             rb.velocity = Vector2.zero;
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+            deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
@@ -68,6 +70,7 @@ public class ABDeathEndless : MonoBehaviour
             rb.velocity = Vector2.zero;
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
+            deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

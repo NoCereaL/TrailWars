@@ -11,6 +11,7 @@ public class PlayerCSDeath : MonoBehaviour
     private Vector3 spawnPoint;
     private ParticleSystem particleSystem;
     private GameObject particleController;
+    public AudioSource deathSound;
 
     //Play Again Canvas
     public Text score;
@@ -45,6 +46,7 @@ public class PlayerCSDeath : MonoBehaviour
             //CSEndlessScore.CSScore = 0;
             GlobalCurrency.AddCurrency(CSEndlessScore.CSScore);
             player.transform.position = spawnPoint;
+            deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

@@ -7,6 +7,7 @@ public class NextLevel : MonoBehaviour
 {
 
     public string level;
+    public AudioSource completeSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class NextLevel : MonoBehaviour
     {
         if(collision.collider.tag == "FinishLine")
         {
+            completeSound.Play();
             Vibration.VibrateNope();
             GlobalCurrency.AddCurrency(5);
             SceneManager.LoadScene(level);

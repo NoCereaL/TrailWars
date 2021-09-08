@@ -11,6 +11,7 @@ public class PlayerDeath : MonoBehaviour
     public ParticleSystem particleSystem;
     public GameObject particleController;
     public Rigidbody2D rb;
+    public AudioSource deathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,7 @@ public class PlayerDeath : MonoBehaviour
             particleSystem.Play();
             rb.velocity = Vector2.zero;
             player.transform.position = spawnPoint;
+            deathSound.Play();
         }
     }
 
@@ -52,6 +54,7 @@ public class PlayerDeath : MonoBehaviour
             particleSystem.Play();
             rb.velocity = Vector2.zero;
             player.transform.position = spawnPoint;
+            deathSound.Play();
         }
     }
 

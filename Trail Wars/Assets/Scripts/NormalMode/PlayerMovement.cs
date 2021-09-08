@@ -9,10 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float maxRotationalSpeed;
     public float velocity;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -31,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
             int[] directions = { -2, -1, 1, 2 };
             int randomNum = Random.Range(0, 3);
             rb.AddTorque(directions[randomNum]);
+            audioSource.Play();
         }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
+            audioSource.Play();
         }
     }
 
