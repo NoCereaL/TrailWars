@@ -359,8 +359,7 @@ GameObject:
   - component: {fileID: 5665671882663008834}
   - component: {fileID: 5665671882663008861}
   - component: {fileID: 5665671882663008860}
-  - component: {fileID: 5665671882663008863}
-  - component: {fileID: 5310557895556676192}
+  - component: {fileID: 315408593913285474}
   m_Layer: 0
   m_Name: ObstacleGate
   m_TagString: gate
@@ -533,23 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3426507ce01854c38bd3f3092a7be363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5665671882663008863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5665671882663008857}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc348266756649808f95dd4938dabe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 5665671882663008835}
-  rb1: {fileID: 5665671882399664817}
-  rb2: {fileID: 5665671883152141892}
-  xSpeed: 2
---- !u!114 &5310557895556676192
+--- !u!114 &315408593913285474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,7 +541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5665671882663008857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 079e3510c8392417f88e3f23ea96b575, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c6bfe61186324c29adc5d493cff32e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5665671882663008835}

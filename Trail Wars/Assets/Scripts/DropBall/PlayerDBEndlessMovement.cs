@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCSEndlessMovement : MonoBehaviour
+public class PlayerDBEndlessMovement : MonoBehaviour
 {
     public Vector3 position;
     public Rigidbody2D rb;
@@ -42,7 +42,7 @@ public class PlayerCSEndlessMovement : MonoBehaviour
 
     public void IncreaseSpeed()
     {
-        switch (CSEndlessScore.CSScore)
+        switch (DBEndlessScore.DBScore)
         {
             case 0:
                 fallSpeed = 5;
@@ -67,6 +67,12 @@ public class PlayerCSEndlessMovement : MonoBehaviour
                 break;
             case 80:
                 fallSpeed = 12;
+                break;
+            case 90:
+                fallSpeed = 13;
+                break;
+            case 100:
+                fallSpeed = 15;
                 break;
         }
     }

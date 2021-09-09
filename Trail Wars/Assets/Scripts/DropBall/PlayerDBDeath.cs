@@ -58,4 +58,5 @@ public class PlayerDBDeath : MonoBehaviour
             player.GetComponent<PlayerMovement>().enabled = false;
         }
     }
+
 }

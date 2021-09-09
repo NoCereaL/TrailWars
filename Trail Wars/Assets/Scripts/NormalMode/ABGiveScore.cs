@@ -20,6 +20,9 @@ public class ABGiveScore : MonoBehaviour
     public GameObject camera;
     public GameObject particalController;
 
+    public AudioSource success;
+    public AudioSource success1;
+
     private void Awake()
     {
         player = GameObject.Find("ABPlayerEndless").GetComponent<Transform>();
@@ -34,6 +37,15 @@ public class ABGiveScore : MonoBehaviour
         if(collision.tag == "Player" && player.position.y <= this.gameObject.transform.position.y)
         {
             ABEndlessScore.ABScore++;
+            Vibration.VibratePeek();
+            if (ABEndlessScore.ABScore % 50 == 0 && ABEndlessScore.ABScore >= 50)
+            {
+                success.Play();
+            }
+            if (ABEndlessScore.ABScore % 10 == 0 && ABEndlessScore.ABScore >= 10)
+            {
+                success1.Play();
+            }
         }
         if (collision.tag == "Player" && player.position.y >= this.gameObject.transform.position.y)
         {
