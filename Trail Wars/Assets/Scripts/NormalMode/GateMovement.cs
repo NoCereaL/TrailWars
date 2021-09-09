@@ -5,6 +5,8 @@ using UnityEngine;
 public class GateMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Rigidbody2D rb1;
+    public Rigidbody2D rb2;
 
     public int xSpeed;
     // Start is called before the first frame update
@@ -31,6 +33,8 @@ public class GateMovement : MonoBehaviour
     public void AutoMove()
     {
         rb.velocity = new Vector2(xSpeed, 0);
+        rb1.velocity = new Vector2(xSpeed, 0);
+        rb2.velocity = new Vector2(xSpeed, 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

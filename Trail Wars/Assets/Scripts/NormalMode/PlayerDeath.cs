@@ -58,4 +58,20 @@ public class PlayerDeath : MonoBehaviour
         }
     }
 
+
+    //Experimental
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "obstacle")
+        {
+            CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
+            Vibration.VibratePop();
+            //particleSystem.Play();
+            particleController.transform.position = transform.position;
+            particleSystem.Play();
+            rb.velocity = Vector2.zero;
+            player.transform.position = spawnPoint;
+            deathSound.Play();
+        }
+    }
 }

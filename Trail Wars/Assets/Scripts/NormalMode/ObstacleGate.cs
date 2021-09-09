@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstacleGate : MonoBehaviour
 {
-    public GameObject obstacle;
+    private GameObject obstacle;
     // Start is called before the first frame update
     void Start()
     {

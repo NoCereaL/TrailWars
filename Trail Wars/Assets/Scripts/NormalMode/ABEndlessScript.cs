@@ -13,6 +13,7 @@ public class ABEndlessScript : MonoBehaviour
     private GameObject gameContainer;
     public GameObject movingObject;
     public GameObject rotatingObject;
+    public GameObject movingGate;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,11 @@ public class ABEndlessScript : MonoBehaviour
             if(ABEndlessScore.ABScore % 10 == 0)
             {
                 Instantiate(rotatingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
+                this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            }
+            if(ABEndlessScore.ABScore % 15 == 0 && ABEndlessScore.ABScore >= 10)
+            {
+                Instantiate(movingGate, spawnPoint, Quaternion.identity, gameContainer.transform);
                 this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
             }
             else {
