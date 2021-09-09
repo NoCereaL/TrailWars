@@ -49,7 +49,11 @@ public class ABEndlessScript : MonoBehaviour
                 Instantiate(rotatingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
                 this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
             }
-
+            else if (ABEndlessScore.ABScore % 15 == 0 && ABEndlessScore.ABScore >= 10)
+            {
+                Instantiate(movingGate, spawnPoint, Quaternion.identity, gameContainer.transform);
+                this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
+            }
             else {
                 Instantiate(movingObject, spawnPoint, Quaternion.identity, gameContainer.transform);
                 this.gameObject.GetComponent<ABEndlessScript>().enabled = false;
