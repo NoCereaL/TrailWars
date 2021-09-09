@@ -15,6 +15,7 @@ public class ABGiveScore : MonoBehaviour
 
     //Play Again Canvas
     public Text score;
+    public Text diamond;
     public GameObject playAgainCanvas;
     public GameObject camera;
     public GameObject particalController;
@@ -54,7 +55,9 @@ public class ABGiveScore : MonoBehaviour
             //StartCoroutine(PauseGame());
 
             //Currency Rewards
-            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
+            int awardedDiamond = ABEndlessScore.ABScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
+            diamond.text = "+" + awardedDiamond;
         }
     }
 }

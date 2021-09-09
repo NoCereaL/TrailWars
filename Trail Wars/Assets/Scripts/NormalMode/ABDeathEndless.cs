@@ -15,6 +15,7 @@ public class ABDeathEndless : MonoBehaviour
 
     //Play Again Canvas
     public Text score;
+    public Text diamond;
     public GameObject playAgainCanvas;
     public GameObject camera;
     public GameObject particalController;
@@ -54,7 +55,9 @@ public class ABDeathEndless : MonoBehaviour
             score.text = ABEndlessScore.ABScore + "";
             player.GetComponent<PlayerMovement>().enabled = false;
             //StartCoroutine(PauseGame());
-            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
+            int awardedDiamond = ABEndlessScore.ABScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
+            diamond.text = "+" + awardedDiamond;
         }
     }
 
@@ -80,7 +83,9 @@ public class ABDeathEndless : MonoBehaviour
             //StartCoroutine(PauseGame());
 
             //Currency Rewards
-            GlobalCurrency.AddCurrency(ABEndlessScore.ABScore);
+            int awardedDiamond = ABEndlessScore.ABScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
+            diamond.text = "+" + awardedDiamond;
         }
     }
 
