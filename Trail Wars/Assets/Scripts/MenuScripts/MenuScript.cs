@@ -154,6 +154,12 @@ public class MenuScript : MonoBehaviour
 
     //Drop Ball Levels
 
+    public void DBEndless()
+    {
+        SceneManager.LoadScene("DBEndless");
+        buttonClick.Play();
+    }
+
     public void DBLevel1()
     {
         SceneManager.LoadScene("DB Level 1");

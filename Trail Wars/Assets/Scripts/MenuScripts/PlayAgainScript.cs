@@ -20,6 +20,7 @@ public class PlayAgainScript : MonoBehaviour
         Time.timeScale = 1;
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
+        DBEndlessScore.DBScore = 0;
         cam.transform.SetParent(cameraHolder.transform);
         rb.isKinematic = false;
         if(player.GetComponent<PlayerMovement>() != null)
@@ -37,6 +38,7 @@ public class PlayAgainScript : MonoBehaviour
     {
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
+        DBEndlessScore.DBScore = 0;
         SceneManager.LoadScene("Main Menu");
         audio.Play();
     }

@@ -45,6 +45,7 @@ public class PlayerCSDeath : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             rb.isKinematic = true;
             //CSEndlessScore.CSScore = 0;
+            //Award Diamond
             int awardedDiamond = CSEndlessScore.CSScore / 3;
             GlobalCurrency.AddCurrency(awardedDiamond);
             player.transform.position = spawnPoint;

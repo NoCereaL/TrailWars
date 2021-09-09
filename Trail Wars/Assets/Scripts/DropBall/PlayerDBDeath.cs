@@ -15,6 +15,7 @@ public class PlayerDBDeath : MonoBehaviour
 
     //Play Again Canvas
     public Text score;
+    public Text diamond;
     public GameObject playAgainCanvas;
     public GameObject camera;
     public GameObject particalController;
@@ -43,13 +44,17 @@ public class PlayerDBDeath : MonoBehaviour
             particleSystem.Play();
             rb.velocity = new Vector2(0, 0);
             rb.isKinematic = true;
+            //Award Diamond
+            int awardedDiamond = DBEndlessScore.DBScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
             player.transform.position = spawnPoint;
             deathSound.Play();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
-            score.text = CSEndlessScore.CSScore + "";
+            score.text = DBEndlessScore.DBScore + "";
+            diamond.text = "+" + awardedDiamond;
             player.GetComponent<PlayerMovement>().enabled = false;
         }
     }
