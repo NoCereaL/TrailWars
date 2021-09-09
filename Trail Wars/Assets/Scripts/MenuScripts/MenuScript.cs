@@ -188,7 +188,7 @@ public class MenuScript : MonoBehaviour
 
     public void CSEndless()
     {
-        SceneManager.LoadScene("CS Endless");
+        SceneManager.LoadScene("CS Endless Hard");
         buttonClick.Play();
     }
 
