@@ -790,3 +790,655 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 213.033455 seconds.
+  path: Assets/Scenes/DB Levels/DBEndless.unity
+  artifactKey: Guid(1e399da998eb34129a9560033d728b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DB Levels/DBEndless.unity using Guid(1e399da998eb34129a9560033d728b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8856f546bc1b82f2369d3a6f70f302') in 0.030156 seconds 
+  Import took 0.037399 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005064 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.466 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 239.9 MB.
+System memory in use after: 240.0 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 2.249334 ms (FindLiveObjects: 0.273500 ms CreateObjectMapping: 0.081375 ms MarkObjects: 1.759375 ms  DeleteObjects: 0.134084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8.638067 seconds.
+  path: Assets/Scenes/DB Levels/DB Endless.unity
+  artifactKey: Guid(1e399da998eb34129a9560033d728b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DB Levels/DB Endless.unity using Guid(1e399da998eb34129a9560033d728b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450c5d79557bda2a4326a86829379d01') in 0.019467 seconds 
+  Import took 0.025575 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003803 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.496 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 240.1 MB.
+System memory in use after: 240.3 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 3997.
+Total: 2.003500 ms (FindLiveObjects: 0.193459 ms CreateObjectMapping: 0.074625 ms MarkObjects: 1.629625 ms  DeleteObjects: 0.105000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 67.480843 seconds.
+  path: Assets/Scenes/DBLevel Selector.unity
+  artifactKey: Guid(c1ba73c8da14f4217abf33c07b773985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DBLevel Selector.unity using Guid(c1ba73c8da14f4217abf33c07b773985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a803117733725e0880660266f721ad8') in 0.028341 seconds 
+  Import took 0.036276 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.411 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 240.4 MB.
+System memory in use after: 240.5 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 4001.
+Total: 2.133917 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.077000 ms MarkObjects: 1.701375 ms  DeleteObjects: 0.107208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003288 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.386 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 240.6 MB.
+System memory in use after: 240.7 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 4005.
+Total: 2.057583 ms (FindLiveObjects: 0.215125 ms CreateObjectMapping: 0.076333 ms MarkObjects: 1.665167 ms  DeleteObjects: 0.100292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 195.523627 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b008f4825234e7c9a7e26d94f3d9c0f') in 1.182232 seconds 
+  Import took 1.188259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.629996 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0340e539e5567c392134d9416a0c770') in 0.028626 seconds 
+  Import took 0.049903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.003281 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d099b2c2e9e271c81611cda3448d06') in 0.009324 seconds 
+  Import took 0.016386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.124833 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b679317ce27d7ff7b3c94851d9481707') in 0.011983 seconds 
+  Import took 0.019112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.157611 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145a5198802cdd2b8a28a923719d6899') in 0.007551 seconds 
+  Import took 0.014194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.130859 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62e98191987b1517cb49102eb1035569') in 0.007154 seconds 
+  Import took 0.013942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.492438 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab
+  artifactKey: Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab using Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bf2f5d2867658d29c0f1b0530ba348') in 0.010408 seconds 
+  Import took 0.018707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.162814 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab
+  artifactKey: Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab using Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8ed669f1500630da857fd96ba3de1f') in 0.009923 seconds 
+  Import took 0.016714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009828 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab
+  artifactKey: Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder.prefab using Guid(c8ea426ce1a1b4b4baed7decc89c8b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8ed669f1500630da857fd96ba3de1f') in 0.009624 seconds 
+  Import took 0.017590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.638265 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab
+  artifactKey: Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab using Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f548505fc1ffa68c403333212af977df') in 0.019053 seconds 
+  Import took 0.031026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.006570 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab
+  artifactKey: Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab using Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1d15784879946c4b0763bf8ab25695') in 0.009906 seconds 
+  Import took 0.016586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014776 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab
+  artifactKey: Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder1.prefab using Guid(8fc272788acb9448bafa7d60338d4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1d15784879946c4b0763bf8ab25695') in 0.014008 seconds 
+  Import took 0.021484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.938771 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder2.prefab
+  artifactKey: Guid(525a7d9cf2ca743f6bcca72fc576bc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder2.prefab using Guid(525a7d9cf2ca743f6bcca72fc576bc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbed6c85b9157e636864b05022c2d36a') in 0.010026 seconds 
+  Import took 0.017821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.720789 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder2.prefab
+  artifactKey: Guid(525a7d9cf2ca743f6bcca72fc576bc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder2.prefab using Guid(525a7d9cf2ca743f6bcca72fc576bc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649a4db89dbf1a5c619d6f3dd2b6e873') in 0.010142 seconds 
+  Import took 0.016827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.583679 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab
+  artifactKey: Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab using Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bc55df043a229d078259c836f385f9') in 0.009932 seconds 
+  Import took 0.018097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.020104 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab
+  artifactKey: Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab using Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08ed2d2a83b50c2f3e7903152c82777') in 0.009889 seconds 
+  Import took 0.016900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018829 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab
+  artifactKey: Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder3.prefab using Guid(b12d37570ab4a432fa3fffb2bd4aad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08ed2d2a83b50c2f3e7903152c82777') in 0.009483 seconds 
+  Import took 0.017608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.779037 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder4.prefab
+  artifactKey: Guid(d5ad4b4c75c6347f1b596cfeb44884a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder4.prefab using Guid(d5ad4b4c75c6347f1b596cfeb44884a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f4a43419386a4c51fa46c4ea007e6c') in 0.009916 seconds 
+  Import took 0.017283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.628298 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder4.prefab
+  artifactKey: Guid(d5ad4b4c75c6347f1b596cfeb44884a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder4.prefab using Guid(d5ad4b4c75c6347f1b596cfeb44884a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b47a033c52a5c66d28352e8f27f9d0f') in 0.009429 seconds 
+  Import took 0.017325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.789598 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab
+  artifactKey: Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab using Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10df507bf3e4bed4495b7e853fc5be3b') in 0.009688 seconds 
+  Import took 0.016299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.362896 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab
+  artifactKey: Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab using Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b0fdfcf2b3c839f2556b8aa2c89380') in 0.009802 seconds 
+  Import took 0.016372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010813 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab
+  artifactKey: Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder5.prefab using Guid(25ac5e319b9d946dcb4cf4a6f65478c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b0fdfcf2b3c839f2556b8aa2c89380') in 0.009619 seconds 
+  Import took 0.016988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.439273 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab
+  artifactKey: Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab using Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34e05a3b10b87eafb7735e7b03c440b') in 0.020338 seconds 
+  Import took 0.032094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.313934 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab
+  artifactKey: Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab using Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5608e4ff59af0fb25cbab9cb5aa99ed') in 0.009968 seconds 
+  Import took 0.016556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014752 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab
+  artifactKey: Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder6.prefab using Guid(7d5314ff064a4446abc7293a097aa6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5608e4ff59af0fb25cbab9cb5aa99ed') in 0.012623 seconds 
+  Import took 0.019093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.729405 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder7.prefab
+  artifactKey: Guid(79489216c527a48ed8b4ea0012306ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder7.prefab using Guid(79489216c527a48ed8b4ea0012306ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460897bd8e6cb929bcd7a2f691b84627') in 0.009588 seconds 
+  Import took 0.016594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.502764 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder7.prefab
+  artifactKey: Guid(79489216c527a48ed8b4ea0012306ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder7.prefab using Guid(79489216c527a48ed8b4ea0012306ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358a5b59e6e2f1608d14d98e7591efeb') in 0.009729 seconds 
+  Import took 0.016811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.287503 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab
+  artifactKey: Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab using Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a454b2d098216a777593cca86ba5d11e') in 0.009601 seconds 
+  Import took 0.016211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.551155 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab
+  artifactKey: Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab using Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf0f5382a8ed396cb7d8934fef16268') in 0.009678 seconds 
+  Import took 0.017228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010217 seconds.
+  path: Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab
+  artifactKey: Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/ObstacleHolder8.prefab using Guid(1269782fb23804dd18585e2e9b152de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf0f5382a8ed396cb7d8934fef16268') in 0.009302 seconds 
+  Import took 0.016782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.356344 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f0d28f75efc3aa47eae8b8005be329') in 0.010261 seconds 
+  Import took 0.017006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012122 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f0d28f75efc3aa47eae8b8005be329') in 0.009900 seconds 
+  Import took 0.016721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.758317 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e745e07eedc3cc88b4a34a47eafc00f') in 0.009833 seconds 
+  Import took 0.017113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.404102 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80c9d577d989dd950f473800a243a19') in 0.010173 seconds 
+  Import took 0.016943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.966242 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b741f2832a2295aa734614587061548') in 0.009672 seconds 
+  Import took 0.015848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.030395 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc877ca31ca348ebf676378949b5a34c') in 0.009812 seconds 
+  Import took 0.016340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.177815 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da5daba5c1c2315cd03594a0f782e11') in 0.009719 seconds 
+  Import took 0.016209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.529409 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cc93085fc29e755a9c8371439a17f3') in 0.010083 seconds 
+  Import took 0.015877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013972 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cc93085fc29e755a9c8371439a17f3') in 0.009039 seconds 
+  Import took 0.014736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.565343 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d448fb09b945f56858f65b144fbdfcd') in 0.009130 seconds 
+  Import took 0.014749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.099836 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d448fb09b945f56858f65b144fbdfcd') in 0.013793 seconds 
+  Import took 0.023002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.735509 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef1dfc679b504ea716c5721189e181d') in 0.009644 seconds 
+  Import took 0.016450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.872160 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd456ade20b22c868d1845f47789cf1b5') in 0.013215 seconds 
+  Import took 0.021907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.351347 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessObstacle.prefab using Guid(4a3f9432b43ec420eb3621baa208bd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27ca4d5072965b0e6f90295a731867f') in 0.009663 seconds 
+  Import took 0.016722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.490563 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba1e3aabc54c42cf5cb14e383fd37e9') in 0.010586 seconds 
+  Import took 0.017245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001114 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba1e3aabc54c42cf5cb14e383fd37e9') in 0.010075 seconds 
+  Import took 0.016043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.153584 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417bd2929689f0b27faf7b358e98a217') in 0.010458 seconds 
+  Import took 0.017251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007065 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417bd2929689f0b27faf7b358e98a217') in 0.009671 seconds 
+  Import took 0.016050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.188438 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1a03164f8da011b82c6db76781ffae') in 0.010441 seconds 
+  Import took 0.017143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.200981 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1a03164f8da011b82c6db76781ffae') in 0.020752 seconds 
+  Import took 0.033730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.324148 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5eba5d159ba3b23d42828d03764231') in 0.013521 seconds 
+  Import took 0.022091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.539528 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de523ff4f0dc7325542d726f2be8a06') in 0.010625 seconds 
+  Import took 0.017431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006919 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de523ff4f0dc7325542d726f2be8a06') in 0.009888 seconds 
+  Import took 0.015447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.122351 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a04207b91390a2ea9af22703d339233') in 0.009892 seconds 
+  Import took 0.017090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.151251 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98304464da83c6f64cb003b883d28108') in 0.010478 seconds 
+  Import took 0.018662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001380 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98304464da83c6f64cb003b883d28108') in 0.009552 seconds 
+  Import took 0.015424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.307998 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537de6f79f983bf1323e4e1469e6a5d4') in 0.009921 seconds 
+  Import took 0.016122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.773035 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8048d98f9e0feb4a7bcedea07f8bf69') in 0.012809 seconds 
+  Import took 0.020263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002914 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8048d98f9e0feb4a7bcedea07f8bf69') in 0.009590 seconds 
+  Import took 0.015730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.302044 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3aef38fb3379883c4a2acf4f99cfb7') in 0.009942 seconds 
+  Import took 0.017029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.521863 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5801e49b775616f09b394990d0c72fc') in 0.018226 seconds 
+  Import took 0.030035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002675 seconds.
+  path: Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DBPrefabs/EndlessMovingGate.prefab using Guid(caf7ef6e70bf74663b3e4191b396bfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5801e49b775616f09b394990d0c72fc') in 0.012570 seconds 
+  Import took 0.020131 seconds .
+

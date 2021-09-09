@@ -156,7 +156,7 @@ public class MenuScript : MonoBehaviour
 
     public void DBEndless()
     {
-        SceneManager.LoadScene("DBEndless");
+        SceneManager.LoadScene("DB Endless");
         buttonClick.Play();
     }
 
