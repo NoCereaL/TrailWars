@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
 
-public class DBEndlessScript : MonoBehaviour
+public class DBEndlessScript2 : MonoBehaviour
 {
     private Transform player;
     private Transform obstacle;
@@ -12,8 +11,6 @@ public class DBEndlessScript : MonoBehaviour
     private Vector3 spawnPoint;
 
     private GameObject gameContainer;
-    private int randomScale;
-    private Light2D light;
 
     public GameObject[] obstacles;
 
@@ -25,7 +22,6 @@ public class DBEndlessScript : MonoBehaviour
         nextPoint = this.gameObject;
         gameContainer = GameObject.Find("GameContainer");
         spawnPoint = new Vector3(transform.position.x, transform.position.y - 4, transform.position.z);
-        randomScale = Random.Range(0, 6);
     }
 
     // Update is called once per frame
@@ -44,8 +40,8 @@ public class DBEndlessScript : MonoBehaviour
         int rand = Random.Range(0, obstacles.Length);
         if (player.position.y < obstacle.position.y + 8)
         {
-            Instantiate(obstacles[rand], spawnPoint, Quaternion.identity, gameContainer.transform);
-            this.gameObject.GetComponent<DBEndlessScript>().enabled = false;
+            Instantiate(nextPoint, spawnPoint, Quaternion.identity, gameContainer.transform);
+            this.gameObject.GetComponent<DBEndlessScript2>().enabled = false;
         }
     }
 }

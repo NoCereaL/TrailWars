@@ -13,6 +13,10 @@ public class LightsSlider : MonoBehaviour
     void Start()
     {
         slider = this.gameObject.GetComponent<Slider>();
+        if (!PlayerPrefs.HasKey("Brightness"))
+        {
+            PlayerPrefs.SetFloat("Brightness", 0.2f);
+        }
         slider.value = PlayerPrefs.GetFloat("Brightness");
     }
 

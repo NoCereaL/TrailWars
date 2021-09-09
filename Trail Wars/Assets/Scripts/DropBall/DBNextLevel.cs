@@ -22,7 +22,7 @@ public class DBNextLevel : MonoBehaviour
     {
         if (collision.collider.tag == "FinishLine")
         {
-            successSound.Play();
+            //successSound.Play();
             Vibration.VibrateNope();
             GlobalCurrency.AddCurrency(5);
             SceneManager.LoadScene(level);
