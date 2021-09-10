@@ -16,6 +16,7 @@ public class PlayerDBDeath : MonoBehaviour
     //Play Again Canvas
     public Text score;
     public Text diamond;
+    public Text xpText;
     public GameObject playAgainCanvas;
     public GameObject camera;
     public GameObject particalController;
@@ -50,12 +51,18 @@ public class PlayerDBDeath : MonoBehaviour
             player.transform.position = spawnPoint;
             deathSound.Play();
 
+            //XP Rewards
+            int awardedXP = DBEndlessScore.DBScore / 2;
+            GlobalXP.AddXP(awardedXP);
+            GlobalXP.AddToTotalXP(awardedXP);
+            xpText.text = "+" + awardedXP + "XP";
+
             //Play Again
             camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
             score.text = DBEndlessScore.DBScore + "";
             diamond.text = "+" + awardedDiamond;
-            player.GetComponent<PlayerMovement>().enabled = false;
+            player.GetComponent<PlayerMovement>().enabled = false;     
         }
     }
 
@@ -74,6 +81,12 @@ public class PlayerDBDeath : MonoBehaviour
             GlobalCurrency.AddCurrency(awardedDiamond);
             player.transform.position = spawnPoint;
             deathSound.Play();
+
+            //XP Rewards
+            int awardedXP = DBEndlessScore.DBScore / 2;
+            GlobalXP.AddXP(awardedXP);
+            GlobalXP.AddToTotalXP(awardedXP);
+            xpText.text = "+" + awardedXP + "XP";
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

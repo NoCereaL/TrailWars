@@ -16,6 +16,7 @@ public class PlayerCSDeath : MonoBehaviour
     //Play Again Canvas
     public Text score;
     public Text diamond;
+    public Text xpText;
     public GameObject playAgainCanvas;
     public GameObject camera;
     public GameObject particalController;
@@ -51,12 +52,18 @@ public class PlayerCSDeath : MonoBehaviour
             player.transform.position = spawnPoint;
             deathSound.Play();
 
+            //XP Rewards
+            int awardedXP = CSEndlessScore.CSScore / 2;
+            GlobalXP.AddXP(awardedXP);
+            GlobalXP.AddToTotalXP(awardedXP);
+            xpText.text = "+" + awardedXP + "XP";
+
             //Play Again
             camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
             score.text = CSEndlessScore.CSScore + "";
             diamond.text = "+" + awardedDiamond;
-            player.GetComponent<PlayerMovement>().enabled = false;
+            player.GetComponent<PlayerMovement>().enabled = false;   
         }
     }
 }

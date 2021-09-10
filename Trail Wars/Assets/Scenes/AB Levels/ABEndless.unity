@@ -1562,6 +1562,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1871141255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3268471537028715921, guid: 5f8eb258fb996481a86d39086db24ff6, type: 3}
+  m_PrefabInstance: {fileID: 1871141251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2037676049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2008,6 +2019,7 @@ MonoBehaviour:
   deathSound: {fileID: 229620973675490572}
   score: {fileID: 1871141253}
   diamond: {fileID: 1871141254}
+  xpText: {fileID: 1871141255}
   playAgainCanvas: {fileID: 1871141252}
   camera: {fileID: 229620973990693756}
   particalController: {fileID: 1354578317}
@@ -2932,6 +2944,7 @@ MonoBehaviour:
   deathSound: {fileID: 1778561655369724520}
   score: {fileID: 1871141253}
   diamond: {fileID: 1871141254}
+  xpText: {fileID: 1871141255}
   playAgainCanvas: {fileID: 1871141252}
   camera: {fileID: 229620973990693756}
   particalController: {fileID: 1354578317}
@@ -3387,6 +3400,10 @@ PrefabInstance:
     - target: {fileID: 3393845965978849990, guid: cc68019ced713410aa961ff04063b9ce, type: 3}
       propertyPath: m_Name
       value: TransitionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393845965978849990, guid: cc68019ced713410aa961ff04063b9ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc68019ced713410aa961ff04063b9ce, type: 3}
