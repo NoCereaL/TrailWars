@@ -15,7 +15,10 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //menu = this.gameObject;
+        if (!PlayerPrefs.HasKey("Brightness"))
+        {
+            PlayerPrefs.SetFloat("Brightness", 0.2f);
+        }
     }
 
     // Update is called once per frame

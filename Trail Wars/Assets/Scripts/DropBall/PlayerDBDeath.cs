@@ -52,10 +52,13 @@ public class PlayerDBDeath : MonoBehaviour
             deathSound.Play();
 
             //XP Rewards
-            int awardedXP = DBEndlessScore.DBScore / 2;
-            GlobalXP.AddXP(awardedXP);
-            GlobalXP.AddToTotalXP(awardedXP);
-            xpText.text = "+" + awardedXP + "XP";
+            if(DBEndlessScore.DBScore != 0)
+            {
+                int awardedXP = DBEndlessScore.DBScore / 2;
+                GlobalXP.AddXP(awardedXP);
+                GlobalXP.AddToTotalXP(awardedXP);
+                xpText.text = "+" + awardedXP + "XP";
+            }
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
@@ -83,10 +86,13 @@ public class PlayerDBDeath : MonoBehaviour
             deathSound.Play();
 
             //XP Rewards
-            int awardedXP = DBEndlessScore.DBScore / 2;
-            GlobalXP.AddXP(awardedXP);
-            GlobalXP.AddToTotalXP(awardedXP);
-            xpText.text = "+" + awardedXP + "XP";
+            if (DBEndlessScore.DBScore != 0)
+            {
+                int awardedXP = DBEndlessScore.DBScore / 2;
+                GlobalXP.AddXP(awardedXP);
+                GlobalXP.AddToTotalXP(awardedXP);
+                xpText.text = "+" + awardedXP + "XP";
+            }
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

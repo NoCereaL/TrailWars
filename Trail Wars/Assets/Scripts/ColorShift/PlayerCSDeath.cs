@@ -53,10 +53,13 @@ public class PlayerCSDeath : MonoBehaviour
             deathSound.Play();
 
             //XP Rewards
-            int awardedXP = CSEndlessScore.CSScore / 2;
-            GlobalXP.AddXP(awardedXP);
-            GlobalXP.AddToTotalXP(awardedXP);
-            xpText.text = "+" + awardedXP + "XP";
+            if (CSEndlessScore.CSScore != 0)
+            {
+                int awardedXP = CSEndlessScore.CSScore / 2;
+                GlobalXP.AddXP(awardedXP);
+                GlobalXP.AddToTotalXP(awardedXP);
+                xpText.text = "+" + awardedXP + "XP";
+            }
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
