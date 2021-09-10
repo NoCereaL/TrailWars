@@ -27,6 +27,8 @@ public class NextLevel : MonoBehaviour
             //completeSound.Play();
             Vibration.VibrateNope();
             GlobalCurrency.AddCurrency(5);
+            GlobalXP.AddXP(25);
+            GlobalXP.AddToTotalXP(25);
             SceneManager.LoadScene(level);
         }
     }
