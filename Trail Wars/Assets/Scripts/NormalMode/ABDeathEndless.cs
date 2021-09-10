@@ -89,6 +89,34 @@ public class ABDeathEndless : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "obstacle")
+        {
+            CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
+            Vibration.VibratePop();
+            //particleSystem.Play();
+            particleController.transform.position = transform.position;
+            particleSystem.Play();
+            rb.velocity = Vector2.zero;
+            //ABEndlessScore.ABScore = 0;
+            player.transform.position = spawnPoint;
+            deathSound.Play();
+
+            //Play Again
+            camera.transform.SetParent(particalController.transform);
+            playAgainCanvas.SetActive(true);
+            score.text = ABEndlessScore.ABScore + "";
+            player.GetComponent<PlayerMovement>().enabled = false;
+            //StartCoroutine(PauseGame());
+
+            //Currency Rewards
+            int awardedDiamond = ABEndlessScore.ABScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
+            diamond.text = "+" + awardedDiamond;
+        }
+    }
+
     IEnumerator PauseGame()
     {
         yield return new WaitForSeconds(2);

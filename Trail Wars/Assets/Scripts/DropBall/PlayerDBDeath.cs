@@ -59,4 +59,29 @@ public class PlayerDBDeath : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "obstacle")
+        {
+            CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
+            Vibration.VibratePop();
+            particleController.transform.position = transform.position;
+            particleSystem.Play();
+            rb.velocity = new Vector2(0, 0);
+            rb.isKinematic = true;
+            //Award Diamond
+            int awardedDiamond = DBEndlessScore.DBScore / 3;
+            GlobalCurrency.AddCurrency(awardedDiamond);
+            player.transform.position = spawnPoint;
+            deathSound.Play();
+
+            //Play Again
+            camera.transform.SetParent(particalController.transform);
+            playAgainCanvas.SetActive(true);
+            score.text = DBEndlessScore.DBScore + "";
+            diamond.text = "+" + awardedDiamond;
+            player.GetComponent<PlayerMovement>().enabled = false;
+        }
+    }
+
 }
