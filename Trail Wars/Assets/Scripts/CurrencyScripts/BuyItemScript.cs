@@ -28,6 +28,7 @@ public class BuyItemScript : MonoBehaviour
             PlayerPrefs.SetInt("Diamond", PlayerPrefs.GetInt("Diamond") - itemAmount);      //Buy The Item and take away from player cash
             audioSource.Play();
             Vibration.VibrateNope();
+            PlayerPrefs.SetInt("ItemsOwned", PlayerPrefs.GetInt("ItemsOwned") + 1);
         }
     }
 }

@@ -25,9 +25,19 @@ public class CSNextLevel : MonoBehaviour
         {
             //successSound.Play();
             Vibration.VibrateNope();
+
+            //Award Currency & XP
             GlobalCurrency.AddCurrency(5);
             GlobalXP.AddXP(25);
             GlobalXP.AddToTotalXP(25);
+
+            //Player Stats
+            if (PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion
+            {
+                PlayerPrefs.SetInt("CSLevelsComplete", PlayerPrefs.GetInt("CSLevelsComplete") + 1);
+                PlayerPrefs.SetInt("LevelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
+            }
+
             SceneManager.LoadScene(level);
         }
     }

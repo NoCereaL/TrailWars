@@ -3469,6 +3469,7 @@ MonoBehaviour:
   storePage: {fileID: 0}
   storePageShapes: {fileID: 0}
   settingsPage: {fileID: 0}
+  statsPage: {fileID: 0}
 --- !u!114 &1243827934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4208,6 +4209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705416157}
   - component: {fileID: 1705416158}
+  - component: {fileID: 1705416159}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -4263,6 +4265,18 @@ MonoBehaviour:
   m_Spacing: {x: 40, y: 40}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1705416159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705416156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8808ca162fed04d6fb99b69d4bf30daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1737789744
 GameObject:
   m_ObjectHideFlags: 0
