@@ -37,7 +37,7 @@ public class CheckAmount : MonoBehaviour
         {
             button.interactable = true;
         }
-        if(PlayerPrefs.GetInt("Diamond") <= itemAmount && PlayerPrefs.GetInt(itemName) == 0)
+        if(PlayerPrefs.GetInt("Diamond") < itemAmount && PlayerPrefs.GetInt(itemName) == 0)
         {
             button.interactable = false;
         }
