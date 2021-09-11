@@ -17,7 +17,7 @@ public class DBCountDown : MonoBehaviour
         StartCoroutine(StartCount());
     }
 
-    IEnumerator StartCount()
+    public IEnumerator StartCount()
     {
         yield return new WaitForSeconds((float)0.5);
         animator.enabled = true;

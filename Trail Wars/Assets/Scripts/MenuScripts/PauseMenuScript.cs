@@ -67,6 +67,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
         DBEndlessScore.DBScore = 0;
+        CheckContinues.numOfContinuesUsed = 0;
         SceneManager.LoadScene(1);
     }
 
@@ -78,6 +79,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
         DBEndlessScore.DBScore = 0;
+        CheckContinues.numOfContinuesUsed = 0;
         SceneManager.LoadScene(0);
     }
 
@@ -94,6 +96,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
         DBEndlessScore.DBScore = 0;
+        CheckContinues.numOfContinuesUsed = 0;
         SceneManager.LoadScene(levelName);
     }
 
