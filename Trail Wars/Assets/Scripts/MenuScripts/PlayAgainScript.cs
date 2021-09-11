@@ -12,11 +12,13 @@ public class PlayAgainScript : MonoBehaviour
     public Rigidbody2D rb;
     public AudioSource audio;
     public GameObject diamondText;
+    public GameObject xpText;
 
     public void PlayAgain()
     {
         playAgainCanvas.SetActive(false);
         diamondText.SetActive(true);
+        xpText.SetActive(true);
         Time.timeScale = 1;
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
