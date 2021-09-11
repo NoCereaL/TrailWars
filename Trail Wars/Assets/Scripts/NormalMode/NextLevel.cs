@@ -41,15 +41,16 @@ public class NextLevel : MonoBehaviour
                 GlobalXP.AddToTotalXP(10);
             }
 
+            rewardCanvas.SetActive(true);           //Rewards Animation
+            DontDestroyOnLoad(rewardCanvas);
+
             //Player Stats
-            if(PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion
+            if (PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion
             {
                 PlayerPrefs.SetInt("ABLevelsComplete", PlayerPrefs.GetInt("ABLevelsComplete") + 1);
                 PlayerPrefs.SetInt("LevelsComplete", PlayerPrefs.GetInt("LevelsComplete") + 1);
             }
 
-            rewardCanvas.SetActive(true);
-            DontDestroyOnLoad(rewardCanvas);
             SceneManager.LoadScene(level);
         }
     }

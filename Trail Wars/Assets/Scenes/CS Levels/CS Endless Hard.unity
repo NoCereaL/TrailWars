@@ -1993,6 +1993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3393845965978849990, guid: cc68019ced713410aa961ff04063b9ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc68019ced713410aa961ff04063b9ce, type: 3}
 --- !u!1 &1578203590
@@ -2849,6 +2853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: CS Level 2
   successSound: {fileID: 0}
+  completeSound: {fileID: 0}
+  rewardCanvas: {fileID: 0}
 --- !u!50 &2017021086
 Rigidbody2D:
   serializedVersion: 4

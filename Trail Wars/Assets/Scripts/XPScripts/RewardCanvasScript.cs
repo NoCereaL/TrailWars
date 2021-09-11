@@ -26,11 +26,8 @@ public class RewardCanvasScript : MonoBehaviour
         {
             dbNextLevel = player.GetComponent<DBNextLevel>();
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+
         if (player.GetComponent<NextLevel>() != null)
         {
             if (PlayerPrefs.GetInt(nextLevel.level) == 0)
@@ -72,5 +69,11 @@ public class RewardCanvasScript : MonoBehaviour
                 xp.text = "+10XP";
             }
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
