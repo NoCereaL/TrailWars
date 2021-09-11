@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayAgainScript : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PlayAgainScript : MonoBehaviour
         CSEndlessScore.CSScore = 0;
         DBEndlessScore.DBScore = 0;
         CheckContinues.numOfContinuesUsed = 0;
+        xpText.GetComponent<Text>().text = "0";
         cam.transform.SetParent(cameraHolder.transform);
         rb.isKinematic = false;
         if(player.GetComponent<PlayerMovement>() != null)
