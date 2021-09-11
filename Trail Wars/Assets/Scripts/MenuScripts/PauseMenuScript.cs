@@ -15,6 +15,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
     private NextLevel next;
 
     public GameObject skipLevelCanvas;
+    public static bool pauseOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         //Time.timeScale = 0;
         player.GetComponent<Rigidbody2D>().isKinematic = true;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        pauseOpen = true;
     }
 
     public void Resume()
@@ -54,10 +56,12 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         //Time.timeScale = 1;
         player.GetComponent<Rigidbody2D>().isKinematic = false;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        pauseOpen = false;
     }
 
     public void LevelSelect()
     {
+        pauseOpen = false;
         buttonClick.Play();
         Time.timeScale = 1;
         ABEndlessScore.ABScore = 0;
@@ -68,6 +72,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
 
     public void MainMenu()
     {
+        pauseOpen = false;
         buttonClick.Play();
         Time.timeScale = 1;
         ABEndlessScore.ABScore = 0;
@@ -84,6 +89,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
 
     public void ToNextLevel()
     {
+        pauseOpen = false;
         PlayerPrefs.SetInt(levelName, 1);
         ABEndlessScore.ABScore = 0;
         CSEndlessScore.CSScore = 0;
@@ -93,6 +99,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
 
     public void SkipLevel()
     {
+        pauseOpen = false;
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
             if (Advertisement.IsReady("Rewarded_iOS"))

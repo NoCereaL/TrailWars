@@ -15,7 +15,7 @@ public class DiamondScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(text.text == "+0")
+        if(text.text == "+0" || text.text == "0" || text.text == "+0XP")
         {
             this.gameObject.SetActive(false);
         }

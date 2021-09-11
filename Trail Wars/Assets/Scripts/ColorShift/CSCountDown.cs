@@ -17,12 +17,6 @@ public class CSCountDown : MonoBehaviour
         StartCoroutine(StartCount());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     IEnumerator StartCount()
     {
         yield return new WaitForSeconds((float)0.5);
@@ -35,6 +29,7 @@ public class CSCountDown : MonoBehaviour
         yield return new WaitForSeconds((float)0.5);
         countText.text = "";
         animator.enabled = false;
-        rb.isKinematic = false;
+        if (PauseMenuScript.pauseOpen == false)
+            rb.isKinematic = false;
     }
 }
