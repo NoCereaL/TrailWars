@@ -150,6 +150,8 @@ MonoBehaviour:
   rb: {fileID: 6236306533301073426}
   deathSound: {fileID: -2301673889175470748}
   score: {fileID: 0}
+  diamond: {fileID: 0}
+  xpText: {fileID: 0}
   playAgainCanvas: {fileID: 0}
   camera: {fileID: 0}
   particalController: {fileID: 0}
@@ -167,6 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: DB Level 2
   successSound: {fileID: 2211590698649547217}
+  completeSound: {fileID: 0}
+  rewardCanvas: {fileID: 1910951370308163603, guid: cc918740d913a421b975aa2cc0497c31, type: 3}
 --- !u!58 &6236306533301073427
 CircleCollider2D:
   m_ObjectHideFlags: 0
