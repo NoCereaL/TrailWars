@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CSNextLevel : MonoBehaviour
 {
     public string level;
+    private string currentLevel;
     public AudioSource successSound;
     public AudioSource completeSound;
     public GameObject rewardCanvas;
@@ -41,6 +42,11 @@ public class CSNextLevel : MonoBehaviour
                 GlobalXP.AddXP(10);
                 GlobalXP.AddToTotalXP(10);
             }
+
+            //Mark Current Level as Complete
+            currentLevel = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetInt("is" + currentLevel + "complete", 1);
+
             //Player Stats
             if (PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion
             {

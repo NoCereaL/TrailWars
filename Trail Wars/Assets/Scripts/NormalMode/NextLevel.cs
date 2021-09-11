@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     public string level;
+    private string currentLevel;
     public AudioSource completeSound;
     public GameObject rewardCanvas;
     // Start is called before the first frame update
@@ -43,6 +44,10 @@ public class NextLevel : MonoBehaviour
 
             rewardCanvas.SetActive(true);           //Rewards Animation
             DontDestroyOnLoad(rewardCanvas);
+
+            //Mark Current Level as Complete
+            currentLevel = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetInt("is" + currentLevel + "complete", 1);
 
             //Player Stats
             if (PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion
