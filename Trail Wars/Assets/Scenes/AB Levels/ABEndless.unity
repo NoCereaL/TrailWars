@@ -400,7 +400,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 600, y: 300}
+  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &426772554
 MonoBehaviour:
@@ -481,7 +481,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -260}
-  m_SizeDelta: {x: 600, y: 300}
+  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520698213
 MonoBehaviour:
@@ -941,6 +941,34 @@ PrefabInstance:
     - target: {fileID: 5739562869205460826, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
       propertyPath: m_Name
       value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 369836959}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OpenPauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenuScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5853873075125239537, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9269d21e9db844c31b7fe2160ccdb972, type: 3}
