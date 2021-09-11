@@ -142,71 +142,12 @@ public class MenuScript : MonoBehaviour
         buttonClick.Play();
     }
 
-    public void Level1()
-    {
-        SceneManager.LoadScene("Level 1");
-        buttonClick.Play();
-    }
-
-    public void Level2()
-    {
-        SceneManager.LoadScene("Level 2");
-        buttonClick.Play();
-    }
-
-    public void Level3()
-    {
-        SceneManager.LoadScene("Level 3");
-        buttonClick.Play();
-    }
-
-    public void Level4()
-    {
-        SceneManager.LoadScene("Level 4");
-        buttonClick.Play();
-    }
-
-    public void Level5()
-    {
-        SceneManager.LoadScene("Level 5");
-        buttonClick.Play();
-    }
 
     //Drop Ball Levels
 
     public void DBEndless()
     {
         SceneManager.LoadScene("DB Endless");
-        buttonClick.Play();
-    }
-
-    public void DBLevel1()
-    {
-        SceneManager.LoadScene("DB Level 1");
-        buttonClick.Play();
-    }
-
-    public void DBLevel2()
-    {
-        SceneManager.LoadScene("DB Level 2");
-        buttonClick.Play();
-    }
-
-    public void DBLevel3()
-    {
-        SceneManager.LoadScene("DB Level 3");
-        buttonClick.Play();
-    }
-
-    public void DBLevel4()
-    {
-        SceneManager.LoadScene("DB Level 4");
-        buttonClick.Play();
-    }
-
-    public void DBLevel5()
-    {
-        SceneManager.LoadScene("DB Level 5");
         buttonClick.Play();
     }
 
@@ -218,33 +159,4 @@ public class MenuScript : MonoBehaviour
         buttonClick.Play();
     }
 
-    public void CSLevel1()
-    {
-        SceneManager.LoadScene("CS Level 1");
-        buttonClick.Play();
-    }
-
-    public void CSLevel2()
-    {
-        SceneManager.LoadScene("CS Level 2");
-        buttonClick.Play();
-    }
-
-    public void CSLevel3()
-    {
-        SceneManager.LoadScene("CS Level 3");
-        buttonClick.Play();
-    }
-
-    public void CSLevel4()
-    {
-        SceneManager.LoadScene("CS Level 4");
-        buttonClick.Play();
-    }
-
-    public void CSLevel5()
-    {
-        SceneManager.LoadScene("CS Level 5");
-        buttonClick.Play();
-    }
 }

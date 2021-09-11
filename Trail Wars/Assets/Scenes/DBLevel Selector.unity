@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 328865207}
   - component: {fileID: 328865210}
   - component: {fileID: 328865211}
+  - component: {fileID: 328865212}
   m_Layer: 5
   m_Name: DB Level 1
   m_TagString: Untagged
@@ -568,9 +569,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1243827933}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: DBLevel1
+      - m_Target: {fileID: 328865212}
+        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -628,7 +629,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54bdaceb1adf94a34bcf541a08e1387b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd52c872e914abaa1a501030aef008, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -759,6 +760,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &328865212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328865205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400de4ae5c5a4d57bc7d6a18b21d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385004032
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +787,7 @@ GameObject:
   - component: {fileID: 385004037}
   - component: {fileID: 385004039}
   - component: {fileID: 385004038}
+  - component: {fileID: 385004040}
   m_Layer: 5
   m_Name: DB Level 3
   m_TagString: Untagged
@@ -846,9 +860,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1243827933}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: DBLevel3
+      - m_Target: {fileID: 385004040}
+        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -906,7 +920,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54bdaceb1adf94a34bcf541a08e1387b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd52c872e914abaa1a501030aef008, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1052,6 +1066,18 @@ MonoBehaviour:
   levelName: 
   status: 0
   lockIcon: {fileID: 59934343}
+--- !u!114 &385004040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385004032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400de4ae5c5a4d57bc7d6a18b21d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447973316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1093,7 @@ GameObject:
   - component: {fileID: 447973321}
   - component: {fileID: 447973323}
   - component: {fileID: 447973322}
+  - component: {fileID: 447973324}
   m_Layer: 5
   m_Name: DB Level 2
   m_TagString: Untagged
@@ -1139,9 +1166,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1243827933}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: DBLevel2
+      - m_Target: {fileID: 447973324}
+        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1199,7 +1226,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54bdaceb1adf94a34bcf541a08e1387b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd52c872e914abaa1a501030aef008, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1345,6 +1372,18 @@ MonoBehaviour:
   levelName: 
   status: 0
   lockIcon: {fileID: 1778381256}
+--- !u!114 &447973324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447973316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400de4ae5c5a4d57bc7d6a18b21d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &465498703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1881,7 @@ GameObject:
   - component: {fileID: 579693265}
   - component: {fileID: 579693270}
   - component: {fileID: 579693266}
+  - component: {fileID: 579693271}
   m_Layer: 5
   m_Name: DB Level 5
   m_TagString: Untagged
@@ -1880,7 +1920,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54bdaceb1adf94a34bcf541a08e1387b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd52c872e914abaa1a501030aef008, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2055,9 +2095,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1243827933}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: DBLevel5
+      - m_Target: {fileID: 579693271}
+        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2120,6 +2160,18 @@ MonoBehaviour:
   levelName: 
   status: 0
   lockIcon: {fileID: 2034676416}
+--- !u!114 &579693271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579693263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400de4ae5c5a4d57bc7d6a18b21d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &583172773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,6 +2780,7 @@ GameObject:
   - component: {fileID: 890683945}
   - component: {fileID: 890683950}
   - component: {fileID: 890683946}
+  - component: {fileID: 890683951}
   m_Layer: 5
   m_Name: DB Level 4
   m_TagString: Untagged
@@ -2766,7 +2819,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54bdaceb1adf94a34bcf541a08e1387b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd52c872e914abaa1a501030aef008, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2941,9 +2994,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1243827933}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: DBLevel4
+      - m_Target: {fileID: 890683951}
+        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3006,6 +3059,18 @@ MonoBehaviour:
   levelName: 
   status: 0
   lockIcon: {fileID: 682826628}
+--- !u!114 &890683951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890683943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0400de4ae5c5a4d57bc7d6a18b21d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1065249361
 GameObject:
   m_ObjectHideFlags: 0
