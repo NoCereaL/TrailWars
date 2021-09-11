@@ -19,6 +19,7 @@ public class MenuScript : MonoBehaviour
         {
             PlayerPrefs.SetFloat("Brightness", 0.2f);
         }
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -119,18 +120,21 @@ public class MenuScript : MonoBehaviour
 
     public void AccendBall() {
         buttonClick.Play();
+        Vibration.VibratePop();
         SceneManager.LoadScene(2);
     }
 
     public void DropBall()
     {
         buttonClick.Play();
+        Vibration.VibratePop();
         SceneManager.LoadScene(3);
     }
 
     public void ColorShift()
     {
         buttonClick.Play();
+        Vibration.VibratePop();
         SceneManager.LoadScene(4);
     }
 
