@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 194710918}
-  xSpeed: -10
+  xSpeed: -9
 --- !u!212 &194710921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 451376521}
-  speed: 3
+  speed: 2
 --- !u!61 &451376520
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1866,7 +1866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 468522179}
-  xSpeed: -11
+  xSpeed: -9
 --- !u!212 &468522182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2345,6 +2345,10 @@ PrefabInstance:
       propertyPath: rewardCanvas
       value: 
       objectReference: {fileID: 795397285}
+    - target: {fileID: 229620973677363470, guid: 0852c11b5b0194ddbbab5f191e055c7d, type: 3}
+      propertyPath: showAdsAfter
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 229620973677363505, guid: 0852c11b5b0194ddbbab5f191e055c7d, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2777,7 +2781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 798186407}
-  xSpeed: 10
+  xSpeed: 9
 --- !u!212 &798186410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6927,7 +6931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1986397353}
-  xSpeed: 10
+  xSpeed: 9
 --- !u!212 &1986397356
 SpriteRenderer:
   m_ObjectHideFlags: 0

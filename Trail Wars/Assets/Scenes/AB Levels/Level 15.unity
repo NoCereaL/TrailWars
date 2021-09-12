@@ -2058,6 +2058,10 @@ PrefabInstance:
       propertyPath: rewardCanvas
       value: 
       objectReference: {fileID: 795397285}
+    - target: {fileID: 229620973677363470, guid: 0852c11b5b0194ddbbab5f191e055c7d, type: 3}
+      propertyPath: showAdsAfter
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 229620973677363505, guid: 0852c11b5b0194ddbbab5f191e055c7d, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -6023,7 +6027,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 14
+  m_Text: Level 15
 --- !u!222 &2071199340
 CanvasRenderer:
   m_ObjectHideFlags: 0
