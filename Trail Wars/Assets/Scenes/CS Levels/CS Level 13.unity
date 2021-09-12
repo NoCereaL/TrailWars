@@ -521,6 +521,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5663234201921853113, guid: b76563a2f7d2a494faac12380f3246e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76563a2f7d2a494faac12380f3246e3, type: 3}
 --- !u!4 &394777015 stripped
@@ -851,6 +855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554823054}
     m_Modifications:
+    - target: {fileID: 1032244252359989348, guid: 26c4ce19bde2a4345bd6875942d03732, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6762412752074754420, guid: 26c4ce19bde2a4345bd6875942d03732, type: 3}
       propertyPath: m_Name
       value: RBG
@@ -916,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 1442119680920056926, guid: 1dde88f3fd56d4c3daa4f4ba80302f34, type: 3}
       propertyPath: m_Name
       value: BGR
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884389629007985059, guid: 1dde88f3fd56d4c3daa4f4ba80302f34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5732492296598964600, guid: 1dde88f3fd56d4c3daa4f4ba80302f34, type: 3}
       propertyPath: m_RootOrder
@@ -1156,6 +1168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8243849442276055459, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
 --- !u!4 &781595458 stripped
@@ -1216,6 +1232,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1275509153932703586, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243849442276055459, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3225,6 +3245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGR (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2884389629007985059, guid: 1dde88f3fd56d4c3daa4f4ba80302f34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5732492296598964600, guid: 1dde88f3fd56d4c3daa4f4ba80302f34, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -3644,6 +3668,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554823054}
     m_Modifications:
+    - target: {fileID: 779232101952691731, guid: 19ee7ea3a9adf46498872bc351f311e2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4785639014285906433, guid: 19ee7ea3a9adf46498872bc351f311e2, type: 3}
       propertyPath: m_Name
       value: GRB

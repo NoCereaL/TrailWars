@@ -1034,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8243849442276055459, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4026b2d50dd4948b38ac32b5337fed0a, type: 3}
 --- !u!4 &781595458 stripped
@@ -3336,6 +3340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554823054}
     m_Modifications:
+    - target: {fileID: 779232101952691731, guid: 19ee7ea3a9adf46498872bc351f311e2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4785639014285906433, guid: 19ee7ea3a9adf46498872bc351f311e2, type: 3}
       propertyPath: m_Name
       value: GRB
@@ -3403,6 +3411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554823054}
     m_Modifications:
+    - target: {fileID: 1032244252359989348, guid: 26c4ce19bde2a4345bd6875942d03732, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6762412752074754420, guid: 26c4ce19bde2a4345bd6875942d03732, type: 3}
       propertyPath: m_Name
       value: RBG (1)
@@ -3511,6 +3523,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4259605664920163221, guid: b76563a2f7d2a494faac12380f3246e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663234201921853113, guid: b76563a2f7d2a494faac12380f3246e3, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
