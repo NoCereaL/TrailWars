@@ -18,4 +18,12 @@ public class PlayerDBEndlessDeath : MonoBehaviour
             Leaderboards.DropBallHighScore.SubmitScore(DBEndlessScore.DBScore);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "obstacle")
+        {
+            Leaderboards.DropBallHighScore.SubmitScore(DBEndlessScore.DBScore);
+        }
+    }
 }
