@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class ABGiveScore : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class ABGiveScore : MonoBehaviour
     public AudioSource success;
     public AudioSource success1;
 
+    public void Start()
+    {
+        Cloud.Initialize();
+    }
+
     private void Awake()
     {
         player = GameObject.Find("ABPlayerEndless").GetComponent<Transform>();
@@ -33,6 +39,12 @@ public class ABGiveScore : MonoBehaviour
         particleController = GameObject.Find("ParticleController");
         rb = player.GetComponent<Rigidbody2D>();
     }
+
+    public void SubmitTheScore()
+    {
+        Leaderboards.AscendBallHighScore.SubmitScore(ABEndlessScore.ABScore);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player" && player.position.y <= this.gameObject.transform.position.y)
@@ -59,6 +71,9 @@ public class ABGiveScore : MonoBehaviour
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
             deathSound.Play();
+
+            //Submit Score to Leaderboard
+            SubmitTheScore();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

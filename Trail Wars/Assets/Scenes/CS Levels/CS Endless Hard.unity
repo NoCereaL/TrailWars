@@ -2766,6 +2766,7 @@ GameObject:
   - component: {fileID: 2017021094}
   - component: {fileID: 2017021096}
   - component: {fileID: 2017021095}
+  - component: {fileID: 2017021097}
   m_Layer: 0
   m_Name: CSPlayer
   m_TagString: Player
@@ -3127,6 +3128,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 0}
+--- !u!114 &2017021097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017021082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fb0a03b32fb422bb62fcc359fd6cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2049338051 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7637161747927411350, guid: 5f8eb258fb996481a86d39086db24ff6, type: 3}

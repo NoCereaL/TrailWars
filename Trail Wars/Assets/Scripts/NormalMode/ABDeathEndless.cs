@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class ABDeathEndless : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class ABDeathEndless : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cloud.Initialize();
         spawnPoint = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
         Vibration.Init();
         particleSystem = GameObject.Find("ParticleController").GetComponent<ParticleSystem>();
@@ -34,6 +36,11 @@ public class ABDeathEndless : MonoBehaviour
     void Update()
     {
         DieToFall();
+    }
+
+    public void SubmitTheScore()
+    {
+        Leaderboards.AscendBallHighScore.SubmitScore(ABEndlessScore.ABScore);
     }
 
     public void DieToFall()
@@ -49,6 +56,9 @@ public class ABDeathEndless : MonoBehaviour
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
             deathSound.Play();
+
+            //Submit Score to Leaderboard
+            SubmitTheScore();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
@@ -84,6 +94,9 @@ public class ABDeathEndless : MonoBehaviour
             player.transform.position = spawnPoint;
             deathSound.Play();
 
+            //Submit Score to Leaderboard
+            SubmitTheScore();
+
             //Play Again
             camera.transform.SetParent(particalController.transform);
             playAgainCanvas.SetActive(true);
@@ -117,6 +130,9 @@ public class ABDeathEndless : MonoBehaviour
             //ABEndlessScore.ABScore = 0;
             player.transform.position = spawnPoint;
             deathSound.Play();
+
+            //Submit Score to Leaderboard
+            SubmitTheScore();
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
