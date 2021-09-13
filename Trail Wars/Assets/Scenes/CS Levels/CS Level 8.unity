@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 306470949}
     - target: {fileID: 7087517774824395687, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
       propertyPath: fallSpeed
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
@@ -3221,7 +3221,6 @@ GameObject:
   - component: {fileID: 1740741597}
   - component: {fileID: 1740741596}
   - component: {fileID: 1740741595}
-  - component: {fileID: 1740741600}
   m_Layer: 0
   m_Name: RotatingObstacle
   m_TagString: obstacle
@@ -3455,21 +3454,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1740741600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740741593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc58cadb39641398600522c258aa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1740741599}
-  timeToChange: 0.1
-  timeSinceChange: 0
 --- !u!1 &1796593258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7087517774824395676, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}

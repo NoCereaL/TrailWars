@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CSPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 7087517774824395685, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
+      propertyPath: showAdsAfter
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7087517774824395686, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
       propertyPath: score
       value: 
@@ -349,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 306470949}
     - target: {fileID: 7087517774824395687, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
       propertyPath: fallSpeed
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2752eba6b98644d5298321bc435a5b1e, type: 3}
@@ -1542,7 +1546,6 @@ GameObject:
   - component: {fileID: 1261106567}
   - component: {fileID: 1261106566}
   - component: {fileID: 1261106565}
-  - component: {fileID: 1261106564}
   m_Layer: 0
   m_Name: RotatingObstacle (1)
   m_TagString: obstacle
@@ -1566,21 +1569,6 @@ Transform:
   m_Father: {fileID: 554823054}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1261106564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261106562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc58cadb39641398600522c258aa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1261106569}
-  timeToChange: 0.1
-  timeSinceChange: 0
 --- !u!114 &1261106565
 MonoBehaviour:
   m_ObjectHideFlags: 0
