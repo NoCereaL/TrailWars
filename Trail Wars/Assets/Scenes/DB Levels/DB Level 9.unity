@@ -2613,6 +2613,10 @@ PrefabInstance:
       propertyPath: fallSpeed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6236306533301073454, guid: 8933386d65b99434ca6a4e5f91663f6b, type: 3}
+      propertyPath: showAdsAfter
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8933386d65b99434ca6a4e5f91663f6b, type: 3}
 --- !u!4 &1988322061 stripped
@@ -2655,7 +2659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4220430003300074138, guid: fccc861545a1546a8a6ed03f42487418, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4220430003300074138, guid: fccc861545a1546a8a6ed03f42487418, type: 3}
       propertyPath: m_LocalRotation.w
