@@ -9,6 +9,7 @@ public class CheckShape : MonoBehaviour
 
     public string itemName;
     public int itemAmount;
+    public int levelLock;
     public GameObject lockIcon;
     public Button button;
     public Text amountText;
@@ -16,6 +17,7 @@ public class CheckShape : MonoBehaviour
     public GameObject Text;
     public GameObject equipped;
     public GameObject owned;
+    public GameObject levelLockImg;
 
     public EquipColor item;
     public EquipShape itemShape;
@@ -35,13 +37,18 @@ public class CheckShape : MonoBehaviour
 
     public void ToBuy()
     {
-        if (PlayerPrefs.GetInt("Diamond") >= itemAmount)       //if you have enough money you can buy
+        if (PlayerPrefs.GetInt("Diamond") >= itemAmount && PlayerPrefs.GetInt("LevelXP") >= levelLock)       //if you have enough money you can buy
         {
             button.interactable = true;
+            levelLockImg.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("Diamond") <= itemAmount && PlayerPrefs.GetInt(itemName) == 0)
+        if (PlayerPrefs.GetInt("Diamond") < itemAmount && PlayerPrefs.GetInt(itemName) == 0)
         {
             button.interactable = false;
+        }
+        if(PlayerPrefs.GetInt("LevelXP") >= levelLock)
+        {
+            levelLockImg.SetActive(false);
         }
         if (PlayerPrefs.GetInt(itemName) == 1)          //if you own then you can equip
         {
@@ -50,6 +57,7 @@ public class CheckShape : MonoBehaviour
             DiamondImg.SetActive(false);
             Text.SetActive(false);
             owned.SetActive(true);
+            levelLockImg.SetActive(false);
         }
         if (int.Parse(itemName) == PlayerPrefs.GetInt("PlayerShape"))
         {
