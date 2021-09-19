@@ -12,6 +12,7 @@ public class LoadSceneScript : MonoBehaviour
     {
         button = this.gameObject;
         buttonClick = this.gameObject.GetComponent<AudioSource>();
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class LoadSceneScript : MonoBehaviour
 
     public void LoadLevel()
     {
+        Vibration.VibratePop();
         SceneManager.LoadScene(button.name);
         buttonClick.Play();
     }
