@@ -61,7 +61,7 @@ public class PlayerDBDeath : MonoBehaviour
             }
 
             //Play Again
-            camera.transform.SetParent(particalController.transform);
+            camera.transform.SetParent(particalController.transform);           //Transform Camera position to Particle Controller
             playAgainCanvas.SetActive(true);
             score.text = DBEndlessScore.DBScore + "";
             diamond.text = "+" + awardedDiamond;
