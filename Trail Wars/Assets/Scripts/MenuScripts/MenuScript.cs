@@ -142,6 +142,7 @@ public class MenuScript : MonoBehaviour
 
     public void ABEndless()
     {
+        TinySauce.OnGameStarted("ABEndless");
         SceneManager.LoadScene("ABEndless");
         buttonClick.Play();
     }
@@ -151,6 +152,7 @@ public class MenuScript : MonoBehaviour
 
     public void DBEndless()
     {
+        TinySauce.OnGameStarted("DB Endless");
         SceneManager.LoadScene("DB Endless");
         buttonClick.Play();
     }
@@ -159,6 +161,7 @@ public class MenuScript : MonoBehaviour
 
     public void CSEndless()
     {
+        TinySauce.OnGameStarted("CS Endless Hard");
         SceneManager.LoadScene("CS Endless Hard");
         buttonClick.Play();
     }

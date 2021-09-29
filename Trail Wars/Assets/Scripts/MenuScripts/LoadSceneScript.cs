@@ -24,6 +24,7 @@ public class LoadSceneScript : MonoBehaviour
     public void LoadLevel()
     {
         Vibration.VibratePop();
+        TinySauce.OnGameStarted(button.name);
         SceneManager.LoadScene(button.name);
         buttonClick.Play();
     }
