@@ -13876,7 +13876,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243827927}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4cdbe19292814930b997298b3038f13, type: 3}
   m_Name: 
@@ -18055,8 +18055,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 653438939}
   m_HandleRect: {fileID: 653438938}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
