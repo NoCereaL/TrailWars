@@ -28,7 +28,7 @@ allprojects {
             url "https://maven.google.com"
         }
         maven {
-            url "file:////Users/simonkm/Documents/GitHub/TrailWars/Trail%20Wars/Assets/GeneratedLocalRepo/Extensions/GooglePlayGames/Editor/m2repository" // Assets/Extensions/GooglePlayGames/Editor/GooglePlayGamesPluginDependencies.xml:11
+            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Extensions/GooglePlayGames/Editor/m2repository") // Assets/Extensions/GooglePlayGames/Editor/GooglePlayGamesPluginDependencies.xml:11
         }
         mavenLocal()
         jcenter()
