@@ -123,7 +123,7 @@ namespace GameAnalyticsSDK
         // --------- IOS NATIVE METHODS ---------
 #if (UNITY_IOS) && (!UNITY_EDITOR)
         [DllImport ("__Internal")]
-        private static extern void addImpressionEvent(string adNetworkName, string adNetworkVersion, string impressionData);
+        private static extern void addImpressionEvent(string adNetworkName, string adNetworkVersion, string impressionData, string customFields);
 #if gameanalytics_mopub_enabled
         [DllImport("__Internal")]
         private static extern string _moPubGetSDKVersion();
@@ -149,7 +149,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_mopub_enabled
-                addImpressionEvent("mopub", _moPubGetSDKVersion(), json);
+                addImpressionEvent("mopub", _moPubGetSDKVersion(), json, null);
 #endif
             }
         }
@@ -164,7 +164,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_fyber_enabled
-                addImpressionEvent("fyber", Fyber.FairBid.Version, json);
+                addImpressionEvent("fyber", Fyber.FairBid.Version, json, null);
 #endif
             }
         }
@@ -188,7 +188,7 @@ namespace GameAnalyticsSDK
                     v = v.Substring(0, index);
                 }
 
-                addImpressionEvent("ironsource", v, json);
+                addImpressionEvent("ironsource", v, json, null);
 #endif
             }
         }
@@ -203,7 +203,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_topon_enabled
-                addImpressionEvent("topon", getTopOnSdkVersion(), json);
+                addImpressionEvent("topon", getTopOnSdkVersion(), json, null);
 #endif
             }
         }
@@ -218,7 +218,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_max_enabled
-                addImpressionEvent("max", MaxSdk.Version, json);
+                addImpressionEvent("max", MaxSdk.Version, json, null);
 #endif
             }
         }
@@ -233,7 +233,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_aequus_enabled
-                addImpressionEvent("aequus", sdkVersion, json);
+                addImpressionEvent("aequus", sdkVersion, json, null);
 #endif
             }
         }
@@ -248,7 +248,7 @@ namespace GameAnalyticsSDK
             if(!string.IsNullOrEmpty(json))
             {
 #if gameanalytics_hyperbid_enabled
-                addImpressionEvent("hyperbid", getHyperBidSdkVersion(), json);
+                addImpressionEvent("hyperbid", getHyperBidSdkVersion(), json, null);
 #endif
             }
         }
@@ -325,4 +325,3 @@ namespace GameAnalyticsSDK
         }
     }
 }
-
