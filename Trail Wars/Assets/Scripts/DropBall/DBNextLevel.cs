@@ -58,6 +58,8 @@ public class DBNextLevel : MonoBehaviour
             rewardCanvas.SetActive(true);
             DontDestroyOnLoad(rewardCanvas);
             SceneManager.LoadScene(level);
+
+            
         }
     }
 }
