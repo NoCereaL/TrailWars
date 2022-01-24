@@ -19,6 +19,14 @@ public class MenuScript : MonoBehaviour
         {
             PlayerPrefs.SetFloat("Brightness", 0.2f);
         }
+        if(Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            Application.targetFrameRate = 60;
+        }
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            Application.targetFrameRate = 60;
+        }
         Vibration.Init();
     }
 

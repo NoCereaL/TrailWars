@@ -8,6 +8,7 @@ public class PlayerDBMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float fallSpeed;
     public float velocity;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,5 +38,11 @@ public class PlayerDBMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, -fallSpeed);
         }
+    }
+
+    public void TempMove()
+    {
+        Vector3 temp = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        transform.position += temp * speed * Time.deltaTime;
     }
 }
