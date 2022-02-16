@@ -1,0 +1,704 @@
+Unity Editor version:    2020.3.25f1 (9b9180224418)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.1 (Build 21C52)
+Darwin version:          21.2.0
+Architecture:            x86_64
+Running under Rosetta:   YES
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/simonkm/Documents/GitHub/TrailWars/Trail Wars
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54479
+Successfully changed project path to: /Users/simonkm/Documents/GitHub/TrailWars/Trail Wars
+/Users/simonkm/Documents/GitHub/TrailWars/Trail Wars
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 152.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/simonkm/Documents/GitHub/TrailWars/Trail Wars/Assets
+GfxDevice: creating device client; threaded=0
+2022-02-15 15:49:37.187 Unity[42167:1414191] (null) preferred device: Apple M1 (high power)
+2022-02-15 15:49:37.187 Unity[42167:1414191] Metal devices available: 1
+2022-02-15 15:49:37.187 Unity[42167:1414191] 0: Apple M1 (high power)
+2022-02-15 15:49:37.187 Unity[42167:1414191] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56167
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001093 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 117.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.426 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1426ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1156ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (626ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (117ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012534 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 119.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[YodoMas] HttpPost request - {"timestamp":"1644940183308","bundle_id":"com.moyanask.ibg","plugin_version":"4.5.0","platform":"iOS","sign":"d45cf1501a0d6dcf71d6c51b341d16d0"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:276)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 276)
+
+[YodoMas] HttpPost Exception.Status - ProtocolError, please check your bundle id or package name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:306)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 306)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4781ms)
+		BeginReloadAssembly (249ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (4443ms)
+			LoadAssemblies (219ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (435ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (3059ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (182ms)
+				ProcessInitializeOnLoadAttributes (701ms)
+				ProcessInitializeOnLoadMethodAttributes (2047ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.027901 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.029664 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.18 seconds
+Initializing Unity extensions:
+2022-02-15 15:49:46.210 Unity[42167:1414191] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000015433a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-02-15 15:49:46.216 Unity[42167:1414191] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001560cb0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 293.5 MB.
+System memory in use after: 293.3 MB.
+
+Unloading 432 unused Assets to reduce memory usage. Loaded Objects now: 4476.
+Total: 4.706042 ms (FindLiveObjects: 0.219792 ms CreateObjectMapping: 0.107125 ms MarkObjects: 4.121916 ms  DeleteObjects: 0.256333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/TutorialCanvas.prefab
+  artifactKey: Guid(f7ff529d3ed3f44c2a336c9b27f64546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TutorialCanvas.prefab using Guid(f7ff529d3ed3f44c2a336c9b27f64546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc1afed4e15be06103adb1ecd57171a') in 0.801307 seconds 
+  Import took 0.811287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Prefabs/CountDown.prefab
+  artifactKey: Guid(2a93ee7966e8e457dbea69137e143733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CountDown.prefab using Guid(2a93ee7966e8e457dbea69137e143733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6d7a73b11cc24f7ea0c093d8b8e651') in 0.016323 seconds 
+  Import took 0.026247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Prefabs/ContinueCanvas.prefab
+  artifactKey: Guid(fadb2e7ae298f4c1d82eed10627699bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ContinueCanvas.prefab using Guid(fadb2e7ae298f4c1d82eed10627699bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a971dca555b3d0b22f134551ff11dfff') in 0.043180 seconds 
+  Import took 0.049512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001135 seconds.
+  path: Assets/Prefabs/SkipLevelCanvas.prefab
+  artifactKey: Guid(b12cadff42274462693f6aab84b2a527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SkipLevelCanvas.prefab using Guid(b12cadff42274462693f6aab84b2a527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc65cfd786884fbaa41f6b34dc3aca86') in 0.006027 seconds 
+  Import took 0.011440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Prefabs/Lights.prefab
+  artifactKey: Guid(2583ec31ff4d644cf9343e980c84c6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Lights.prefab using Guid(2583ec31ff4d644cf9343e980c84c6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8069d11ada5470c77080e63046fd3e29') in 0.007078 seconds 
+  Import took 0.013575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Prefabs/PauseButton.prefab
+  artifactKey: Guid(9269d21e9db844c31b7fe2160ccdb972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseButton.prefab using Guid(9269d21e9db844c31b7fe2160ccdb972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57548e16ce22e91dc08b4170281b0898') in 0.005066 seconds 
+  Import took 0.011266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/PlayerShapeController.prefab
+  artifactKey: Guid(90fd452858bae48c5be785efdf02ea40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerShapeController.prefab using Guid(90fd452858bae48c5be785efdf02ea40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fe85c6c3c443e8e5fd10d60d86613a') in 0.004835 seconds 
+  Import took 0.009926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Prefabs/RewardsCanvas.prefab
+  artifactKey: Guid(cc918740d913a421b975aa2cc0497c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RewardsCanvas.prefab using Guid(cc918740d913a421b975aa2cc0497c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778bf8578ec495ad805734b4667dd59b') in 0.007501 seconds 
+  Import took 0.014095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Prefabs/TransitionCanvas.prefab
+  artifactKey: Guid(cc68019ced713410aa961ff04063b9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TransitionCanvas.prefab using Guid(cc68019ced713410aa961ff04063b9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c911b1bedc4f4a8fe4ea3a5396befa0b') in 0.008643 seconds 
+  Import took 0.018510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Prefabs/PauseMenu.prefab
+  artifactKey: Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PauseMenu.prefab using Guid(db583ea72823b4b65b12479a8f003c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6866a5ac191b2db749d872836e083a72') in 0.020950 seconds 
+  Import took 0.033053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 212.891713 seconds.
+  path: Assets/Prefabs/ABPrefabs/EndlessMovingGate.prefab
+  artifactKey: Guid(f3d80c617b82d49e6a09872f28625536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/EndlessMovingGate.prefab using Guid(f3d80c617b82d49e6a09872f28625536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf465c34cb3d0734673d5ceadb7835a') in 0.730898 seconds 
+  Import took 0.754517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001037 seconds.
+  path: Assets/Prefabs/ABPrefabs/Obstacle.prefab
+  artifactKey: Guid(e5c702ac9e8004ca7864f8982d440337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/Obstacle.prefab using Guid(e5c702ac9e8004ca7864f8982d440337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801f76cc2d091f04aa7a7b986f2090bf') in 0.025702 seconds 
+  Import took 0.031720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Prefabs/ABPrefabs/MovingRotate.prefab
+  artifactKey: Guid(0d715a53bd8ba491b8f46b69ba2833c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/MovingRotate.prefab using Guid(0d715a53bd8ba491b8f46b69ba2833c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15c85b676c580c21ca4c98d5ae920e5') in 0.009969 seconds 
+  Import took 0.016134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Prefabs/ABPrefabs/EndlessObstacle.prefab
+  artifactKey: Guid(cc0624932153140df8466b4597f1ebbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/EndlessObstacle.prefab using Guid(cc0624932153140df8466b4597f1ebbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6354f564d91814285cdb1b3c3e6991a') in 0.010448 seconds 
+  Import took 0.016611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Prefabs/ABPrefabs/MovingGate.prefab
+  artifactKey: Guid(fccc861545a1546a8a6ed03f42487418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/MovingGate.prefab using Guid(fccc861545a1546a8a6ed03f42487418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761b1e4de172fcc74aeb9019a1942e10') in 0.009813 seconds 
+  Import took 0.015043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Prefabs/ABPrefabs/RotatingObstacle.prefab
+  artifactKey: Guid(4a451d5476c634186b7e235e4f7f7182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/RotatingObstacle.prefab using Guid(4a451d5476c634186b7e235e4f7f7182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a92d4039e4c29d068d778d9b1f99dc5') in 0.008870 seconds 
+  Import took 0.014007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Prefabs/ABPrefabs/MovingObstacle.prefab
+  artifactKey: Guid(239c86ba242b841a4bd1b362bc583f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ABPrefabs/MovingObstacle.prefab using Guid(239c86ba242b841a4bd1b362bc583f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a585cf5732d19371350501ec0ac438e8') in 0.009805 seconds 
+  Import took 0.015787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.230952 seconds.
+  path: Assets/Prefabs/Players/ABPlayer.prefab
+  artifactKey: Guid(0852c11b5b0194ddbbab5f191e055c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/ABPlayer.prefab using Guid(0852c11b5b0194ddbbab5f191e055c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd87d906452d554720b74f9a97be3bfb') in 0.055466 seconds 
+  Import took 0.063028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Prefabs/Players/DBPlayer.prefab
+  artifactKey: Guid(8933386d65b99434ca6a4e5f91663f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/DBPlayer.prefab using Guid(8933386d65b99434ca6a4e5f91663f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e096ec13884891b7c81528ad210c39d') in 0.014415 seconds 
+  Import took 0.020398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Prefabs/Players/ParticleController.prefab
+  artifactKey: Guid(0b47caff9766543999ebae8e51a2baf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/ParticleController.prefab using Guid(0b47caff9766543999ebae8e51a2baf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0724ec2137a550c4d935e9f53337115') in 0.017065 seconds 
+  Import took 0.026880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Prefabs/Players/CSPlayer.prefab
+  artifactKey: Guid(2752eba6b98644d5298321bc435a5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/CSPlayer.prefab using Guid(2752eba6b98644d5298321bc435a5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8570f3f55b853b54de0e2001e397d2') in 0.012074 seconds 
+  Import took 0.018238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 421.364977 seconds.
+  path: Assets/Scenes/Main Menu.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0247ce42d5fc0918655e63e481be8c59') in 0.007053 seconds 
+  Import took 0.052714 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.046905 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-02-15 16:05:02.826 Unity[42167:1414191] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000154f250 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[YodoMas] Creating new Yodo1AdSettings.asset
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:22)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs Line: 22)
+
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:28)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+[Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs line 28]
+
+[YodoMas] Failed to create the Yodo1 Ad Settings asset.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:37)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs Line: 37)
+
+[YodoMas] HttpPost request - {"timestamp":"1644941103850","bundle_id":"com.MoyanaSK.ImpossibleBallGames","plugin_version":"4.5.0","platform":"android","sign":"50131d9baf6cb2e68317d8742882a5a2"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:276)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 276)
+
+[YodoMas] Response.StatusCode: OK
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:291)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 291)
+
+[YodoMas] HttpPost result - {"name":"Impossible Ball Games","app_key":"Qq3nk3emzb","platform":"android","bundle_id":"com.MoyanaSK.ImpossibleBallGames","admob_key":"ca-app-pub-5333220833779174~3410871634"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:299)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 299)
+
+[YodoMas] HttpPost request - {"timestamp":"1644941105612","bundle_id":"com.moyanask.ibg","plugin_version":"4.5.0","platform":"iOS","sign":"062d99990b276a596a4edb76d07924c8"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:276)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 276)
+
+[YodoMas] HttpPost Exception.Status - ProtocolError, please check your bundle id or package name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:306)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 306)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.641 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5645ms)
+		BeginReloadAssembly (541ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (66ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (341ms)
+		EndReloadAssembly (5003ms)
+			LoadAssemblies (429ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (473ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (3434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (294ms)
+				ProcessInitializeOnLoadAttributes (983ms)
+				ProcessInitializeOnLoadMethodAttributes (2135ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (69ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3965 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 287.0 MB.
+System memory in use after: 287.2 MB.
+
+Unloading 141 unused Assets to reduce memory usage. Loaded Objects now: 4526.
+Total: 5.021625 ms (FindLiveObjects: 0.199542 ms CreateObjectMapping: 0.119083 ms MarkObjects: 4.661250 ms  DeleteObjects: 0.040875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016177 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-02-15 16:06:31.296 Unity[42167:1414191] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001522ae0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[YodoMas] Creating new Yodo1AdSettings.asset
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:22)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs Line: 22)
+
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:28)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+[Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs line 28]
+
+[YodoMas] Failed to create the Yodo1 Ad Settings asset.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Yodo1.MAS.Yodo1AdSettingsSave:Load () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs:37)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:182)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdSettingsSave.cs Line: 37)
+
+[YodoMas] HttpPost request - {"timestamp":"1644941192535","bundle_id":"com.MoyanaSK.ImpossibleBallGames","plugin_version":"4.5.0","platform":"android","sign":"00c836dba945d89f7a48f85b56e18f01"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:276)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 276)
+
+[YodoMas] Response.StatusCode: OK
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:291)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 291)
+
+[YodoMas] HttpPost result - {"name":"Impossible Ball Games","app_key":"Qq3nk3emzb","platform":"android","bundle_id":"com.MoyanaSK.ImpossibleBallGames","admob_key":"ca-app-pub-5333220833779174~3410871634"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:299)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:188)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 299)
+
+[YodoMas] HttpPost request - {"timestamp":"1644941194297","bundle_id":"com.moyanask.ibg","plugin_version":"4.5.0","platform":"iOS","sign":"9b9ca9ad19d05ea29cfcc437289c3b34"}
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:276)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 276)
+
+[YodoMas] HttpPost Exception.Status - ProtocolError, please check your bundle id or package name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Yodo1.MAS.Yodo1AdAssetsImporter:HttpPost (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:306)
+Yodo1.MAS.Yodo1AdAssetsImporter:GetAppInfo (string,string) (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:265)
+Yodo1.MAS.Yodo1AdAssetsImporter:UpdateAppInfo () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:195)
+Yodo1.MAS.Yodo1AdAssetsImporter:OnProjectLoadedInEditor () (at Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs:172)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/Yodo1/MAS/Editor/Scripts/Yodo1AdAssetsImporter.cs Line: 306)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.413 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5416ms)
+		BeginReloadAssembly (336ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (59ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (4962ms)
+			LoadAssemblies (274ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (467ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (3652ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (309ms)
+				ProcessInitializeOnLoadAttributes (1190ms)
+				ProcessInitializeOnLoadMethodAttributes (2134ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (68ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3965 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 287.4 MB.
+System memory in use after: 287.6 MB.
+
+Unloading 139 unused Assets to reduce memory usage. Loaded Objects now: 4530.
+Total: 4.138250 ms (FindLiveObjects: 0.220667 ms CreateObjectMapping: 0.132416 ms MarkObjects: 3.646500 ms  DeleteObjects: 0.136167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Yodo1.MAS;
 
 public class PlayAgainScript : MonoBehaviour
 {
@@ -38,6 +39,10 @@ public class PlayAgainScript : MonoBehaviour
         {
             player.GetComponent<PlayerCSMovement>().enabled = true;
         }
+        if(player.GetComponent<PlayerAdManager>().deathCounter > player.GetComponent<PlayerAdManager>().showAdsAfter)
+        {
+            //player.GetComponent<PlayerAdManager>().deathCounter = 0;
+        }
         audio.Play();
     }
 
@@ -48,6 +53,18 @@ public class PlayAgainScript : MonoBehaviour
         if (player.GetComponent<PlayerMovement>() != null)
         {
             player.GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+        if (Application.platform == RuntimePlatform.OSXEditor)
+        {
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
+        }
+        if (Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
+        }
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_Android");
         }
         audio.Play();
     }

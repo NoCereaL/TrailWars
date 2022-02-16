@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
+using Yodo1.MAS;
 
 public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
 {
@@ -16,6 +17,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
 
     public GameObject skipLevelCanvas;
     public static bool pauseOpen;
+    bool isLoaded;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         {
             levelName = next.level;
         }
+        isLoaded = Yodo1U3dMas.IsRewardedAdLoaded();
     }
 
     public void OpenPauseMenu()
@@ -103,29 +106,41 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
     public void SkipLevel()
     {
         pauseOpen = false;
+        skipLevelCanvas.SetActive(true);
+        pauseMenu.SetActive(false);
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
+            //Unity Ads disabled
+            /*
             if (Advertisement.IsReady("Rewarded_iOS"))
             {
                 Advertisement.Show("Rewarded_iOS");
-            }
+            }*/
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
+            //Yodo1U3dMasCallback.Rewarded.OnAdClosedEvent += OnRewardedAdClosedEvent;
         }
         if (Application.platform == RuntimePlatform.IPhonePlayer)
         {
+            //Unity Ads disabled
+            /*
             if (Advertisement.IsReady("Rewarded_iOS"))
             {
                 Advertisement.Show("Rewarded_iOS");
-            }
+            }*/
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
         }
         if (Application.platform == RuntimePlatform.Android)
         {
+            //Unity Ads disabled
+            /*
             if (Advertisement.IsReady("Rewarded_Android"))
             {
                 Advertisement.Show("Rewarded_Android");
-            }
+            }*/
+            Yodo1U3dMas.ShowRewardedAd("Rewarded_Android");
         }
-        OnUnityAdsDidFinish("Rewarded_iOS", ShowResult.Finished);
-
+        //OnUnityAdsDidFinish("Rewarded_iOS", ShowResult.Finished);
+        
     }
 
     public void DropBall()
@@ -164,5 +179,10 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
             pauseMenu.SetActive(false);
             skipLevelCanvas.SetActive(true);
         }
+    }
+
+    private void OnRewardedAdClosedEvent()
+    {
+        Debug.Log("[Yodo1 Mas] Rewarded ad closed");
     }
 }
