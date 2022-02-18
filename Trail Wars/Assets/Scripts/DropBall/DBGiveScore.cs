@@ -15,7 +15,7 @@ public class DBGiveScore : MonoBehaviour
         if (collision.tag == "Player")
         {
             DBEndlessScore.DBScore++;
-            Vibration.VibratePeek();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePeek(); }
             if (DBEndlessScore.DBScore % 50 == 0 && DBEndlessScore.DBScore >= 50)
             {
                 success.Play();

@@ -50,7 +50,7 @@ public class ABGiveScore : MonoBehaviour
         if(collision.tag == "Player" && player.position.y <= this.gameObject.transform.position.y)
         {
             ABEndlessScore.ABScore++;
-            Vibration.VibratePeek();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePeek(); }
             if (ABEndlessScore.ABScore % 50 == 0 && ABEndlessScore.ABScore >= 50)
             {
                 success.Play();
@@ -63,7 +63,7 @@ public class ABGiveScore : MonoBehaviour
         if (collision.tag == "Player" && player.position.y >= this.gameObject.transform.position.y)
         {
             CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
-            Vibration.VibratePop();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
             //particleSystem.Play();
             particleController.transform.position = transform.position;
             particleSystem.Play();

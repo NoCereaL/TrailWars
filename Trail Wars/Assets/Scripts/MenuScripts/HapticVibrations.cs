@@ -21,11 +21,11 @@ public class HapticVibrations : MonoBehaviour
 
     public void Peek()
     {
-        Vibration.VibratePeek();
+        if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePeek(); }
     }
 
     public void Pop()
     {
-        Vibration.VibratePop();
+        if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
     }
 }

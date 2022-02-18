@@ -116,7 +116,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
             {
                 Advertisement.Show("Rewarded_iOS");
             }*/
-            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
+            if (Yodo1U3dMas.IsRewardedAdLoaded()) Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
             //Yodo1U3dMasCallback.Rewarded.OnAdClosedEvent += OnRewardedAdClosedEvent;
         }
         if (Application.platform == RuntimePlatform.IPhonePlayer)
@@ -127,7 +127,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
             {
                 Advertisement.Show("Rewarded_iOS");
             }*/
-            Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
+            if (Yodo1U3dMas.IsRewardedAdLoaded()) Yodo1U3dMas.ShowRewardedAd("Rewarded_iOS");
         }
         if (Application.platform == RuntimePlatform.Android)
         {
@@ -137,7 +137,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
             {
                 Advertisement.Show("Rewarded_Android");
             }*/
-            Yodo1U3dMas.ShowRewardedAd("Rewarded_Android");
+            if (Yodo1U3dMas.IsRewardedAdLoaded()) Yodo1U3dMas.ShowRewardedAd("Rewarded_Android");
         }
         //OnUnityAdsDidFinish("Rewarded_iOS", ShowResult.Finished);
         

@@ -128,21 +128,21 @@ public class MenuScript : MonoBehaviour
 
     public void AccendBall() {
         buttonClick.Play();
-        Vibration.VibratePop();
+        if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
         SceneManager.LoadScene(2);
     }
 
     public void DropBall()
     {
         buttonClick.Play();
-        Vibration.VibratePop();
+        if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
         SceneManager.LoadScene(3);
     }
 
     public void ColorShift()
     {
         buttonClick.Play();
-        Vibration.VibratePop();
+        if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
         SceneManager.LoadScene(4);
     }
 

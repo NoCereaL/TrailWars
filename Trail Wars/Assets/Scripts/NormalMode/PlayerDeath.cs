@@ -33,7 +33,7 @@ public class PlayerDeath : MonoBehaviour
         if (rb.velocity.y < -15)
         {
             CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
-            Vibration.VibratePop();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
             //particleSystem.Play();
             particleController.transform.position = transform.position;
             particleSystem.Play();
@@ -48,7 +48,7 @@ public class PlayerDeath : MonoBehaviour
         if(collision.collider.tag == "obstacle")
         {
             CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
-            Vibration.VibratePop();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
             //particleSystem.Play();
             particleController.transform.position = transform.position;
             particleSystem.Play();
@@ -65,7 +65,7 @@ public class PlayerDeath : MonoBehaviour
         if (collision.tag == "obstacle")
         {
             CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
-            Vibration.VibratePop();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
             //particleSystem.Play();
             particleController.transform.position = transform.position;
             particleSystem.Play();

@@ -26,7 +26,7 @@ public class NextLevel : MonoBehaviour
         if(collision.collider.tag == "FinishLine")
         {
             //completeSound.Play();
-            Vibration.VibrateNope();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibrateNope(); }
 
             //Award Currency and XP
             if (PlayerPrefs.GetInt(level) == 0)

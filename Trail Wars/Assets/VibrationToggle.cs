@@ -8,15 +8,13 @@ public class VibrationToggle : MonoBehaviour
     public GameObject vibedOffButton;
     public void Update()
     {
-        if(PlayerPrefs.GetInt("Vibration") == 1)
+        if (PlayerPrefs.GetInt("Vibration") == 0)
         {
-            AudioListener.volume = 0;
             vibedButton.SetActive(false);
             vibedOffButton.SetActive(true);
         }
-        else if(PlayerPrefs.GetInt("Vibration") == 0)
+        if (PlayerPrefs.GetInt("Vibration") == 1)
         {
-            AudioListener.volume = 1;
             vibedButton.SetActive(true);
             vibedOffButton.SetActive(false);
         }
@@ -24,16 +22,14 @@ public class VibrationToggle : MonoBehaviour
     }
     public void VibrationOff()
     {
-        PlayerPrefs.SetInt("Vibration", 1);
-        AudioListener.volume = 0;
+        PlayerPrefs.SetInt("Vibration", 0);
         vibedButton.SetActive(false);
         vibedOffButton.SetActive(true);
     }
 
     public void VibrationOn()
     {
-        PlayerPrefs.SetInt("Vibration", 0);
-        AudioListener.volume = 1f;
+        PlayerPrefs.SetInt("Vibration", 1);
         vibedButton.SetActive(true);
         vibedOffButton.SetActive(false);
     }

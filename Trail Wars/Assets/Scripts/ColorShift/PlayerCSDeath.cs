@@ -40,7 +40,7 @@ public class PlayerCSDeath : MonoBehaviour
         if (collision.collider.tag == "obstacle")
         {
             CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
-            Vibration.VibratePop();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
             particleController.transform.position = transform.position;
             particleSystem.Play();
             rb.velocity = new Vector2(0, 0);

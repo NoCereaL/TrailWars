@@ -15,7 +15,7 @@ public class CSGiveScore : MonoBehaviour
         if(collision.tag == "Player")
         {
             CSEndlessScore.CSScore++;
-            Vibration.VibratePeek();
+            if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePeek(); }
             if (CSEndlessScore.CSScore % 50 == 0 && CSEndlessScore.CSScore >= 50)
             {
                 success.Play();
