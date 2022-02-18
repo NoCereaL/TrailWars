@@ -37,7 +37,7 @@ public class PlayerAdManager : MonoBehaviour
                     {
                         Advertisement.Show("Interstitial_iOS");
                     }*/
-                    if(Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd("Interstitial_iOS");
+                    if(Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd();
                     deathCounter = 0;
                 }
                 if (Application.platform == RuntimePlatform.IPhonePlayer)
@@ -48,7 +48,7 @@ public class PlayerAdManager : MonoBehaviour
                     {
                         Advertisement.Show("Interstitial_iOS");
                     }*/
-                    if (Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd("Interstitial_iOS");
+                    if (Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd();
                     deathCounter = 0;
                 }
                 if (Application.platform == RuntimePlatform.Android)
@@ -59,7 +59,7 @@ public class PlayerAdManager : MonoBehaviour
                     {
                         Advertisement.Show("Interstitial_Android");
                     }*/
-                    if (Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd("Interstitial_Android");
+                    if (Yodo1U3dMas.IsInterstitialAdLoaded()) Yodo1U3dMas.ShowInterstitialAd();
                     deathCounter = 0;
                 }
 
