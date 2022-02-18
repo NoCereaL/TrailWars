@@ -24,6 +24,7 @@ public class YodoAdsInit : MonoBehaviour
         };
         //InitializeInterstitialAds();
         //InitializeRewardedAds();
+        this.gameObject.GetComponent<YodoAdsInit>().enabled = false;
     }
 
     private void InitializeInterstitialAds()
