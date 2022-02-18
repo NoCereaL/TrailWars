@@ -15,6 +15,7 @@ public class PlayerAdManager : MonoBehaviour
     void Start()
     {
         player = this.gameObject;
+        InitializeInterstitialAds();
     }
 
     private void Update()
@@ -66,6 +67,31 @@ public class PlayerAdManager : MonoBehaviour
             }
             deathCounter += 1;
         }
+    }
+
+    private void InitializeInterstitialAds()
+    {
+        Yodo1U3dMasCallback.Interstitial.OnAdOpenedEvent +=
+        OnInterstitialAdOpenedEvent;
+        Yodo1U3dMasCallback.Interstitial.OnAdClosedEvent +=
+        OnInterstitialAdClosedEvent;
+        Yodo1U3dMasCallback.Interstitial.OnAdErrorEvent +=
+        OnInterstitialAdErorEvent;
+    }
+
+    private void OnInterstitialAdOpenedEvent()
+    {
+        Debug.Log("[Yodo1 Mas] Interstitial ad opened");
+    }
+
+    private void OnInterstitialAdClosedEvent()
+    {
+        Debug.Log("[Yodo1 Mas] Interstitial ad closed");
+    }
+
+    private void OnInterstitialAdErorEvent(Yodo1U3dAdError adError)
+    {
+        Debug.Log("[Yodo1 Mas] Interstitial ad error - " + adError.ToString());
     }
 
 }
