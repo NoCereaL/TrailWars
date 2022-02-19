@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Advertisements;
+//using UnityEngine.Advertisements;
 using Yodo1.MAS;
 
-public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
+public class PauseMenuScript : MonoBehaviour //IUnityAdsListener
 {
     public GameObject pauseMenu;
     public AudioSource buttonClick;
@@ -157,7 +157,8 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
         Time.timeScale = 1;
         SceneManager.LoadScene("CSLevel Selector");
     }
-
+    //Unity Ads
+    /*
     public void OnUnityAdsReady(string placementId)
     {
         throw new System.NotImplementedException();
@@ -180,7 +181,7 @@ public class PauseMenuScript : MonoBehaviour, IUnityAdsListener
             pauseMenu.SetActive(false);
             skipLevelCanvas.SetActive(true);
         }
-    }
+    }*/
 
     private void InitializeRewardedAds()
     {

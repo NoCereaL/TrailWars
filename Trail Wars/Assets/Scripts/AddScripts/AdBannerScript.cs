@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Advertisements;
+//using UnityEngine.Advertisements;
 
 public class AdBannerScript : MonoBehaviour
 {
@@ -23,9 +23,10 @@ public class AdBannerScript : MonoBehaviour
         {
             placementId = iOSPlacementId;
         }
-        StartCoroutine(ShowBannerWhenReady());
+        //StartCoroutine(ShowBannerWhenReady());
     }
 
+    /*
     IEnumerator ShowBannerWhenReady()
     {
         while (!Advertisement.IsReady(placementId))
@@ -35,4 +36,5 @@ public class AdBannerScript : MonoBehaviour
         Advertisement.Banner.Show(placementId);
         Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);
     }
+    */
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Advertisements;
+//using UnityEngine.Advertisements;
 
 public class AdManager : MonoBehaviour
 {
@@ -25,6 +25,7 @@ public class AdManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (Advertisement.IsReady("Rewarded_iOS"))
@@ -38,7 +39,7 @@ public class AdManager : MonoBehaviour
             {
                 Advertisement.Show("Interstitial_iOS");
             }
-        }
+        }*/
     }
 
     public void InitializeAds()
@@ -57,7 +58,7 @@ public class AdManager : MonoBehaviour
         }
         //_gameId = (Application.platform == RuntimePlatform.IPhonePlayer) ? _androidGameID : _iOSGameID;
 
-        Advertisement.Initialize(_gameId, _testMode);
+        //Advertisement.Initialize(_gameId, _testMode);
 
         Debug.Log(_gameId);
 
