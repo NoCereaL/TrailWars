@@ -37,7 +37,7 @@ allprojects {
             url "https://sdk.tapjoy.com/" // Assets/Yodo1/MAS/Editor/Dependencies/Yodo1MasAndroidDependencies.xml:8
         }
         maven {
-            url "file:///G:/GitProjects/TrailWars/Trail%20Wars\Assets/GeneratedLocalRepo/Extensions/GooglePlayGames/Editor/m2repository" // Assets/Extensions/GooglePlayGames/Editor/GooglePlayGamesPluginDependencies.xml:11
+            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Extensions/GooglePlayGames/Editor/m2repository") // Assets/Extensions/GooglePlayGames/Editor/GooglePlayGamesPluginDependencies.xml:11
         }
         mavenLocal()
         jcenter()
