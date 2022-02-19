@@ -59,7 +59,7 @@ public class PlayerDBDeath : MonoBehaviour
                 GlobalXP.AddToTotalXP(awardedXP);
                 xpText.text = "+" + awardedXP + "XP";
             }
-            TinySauce.OnGameFinished(true, DBEndlessScore.DBScore);
+            //TinySauce.OnGameFinished(true, DBEndlessScore.DBScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);           //Transform Camera position to Particle Controller
@@ -94,7 +94,7 @@ public class PlayerDBDeath : MonoBehaviour
                 GlobalXP.AddToTotalXP(awardedXP);
                 xpText.text = "+" + awardedXP + "XP";
             }
-            TinySauce.OnGameFinished(true, DBEndlessScore.DBScore);
+            //TinySauce.OnGameFinished(true, DBEndlessScore.DBScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

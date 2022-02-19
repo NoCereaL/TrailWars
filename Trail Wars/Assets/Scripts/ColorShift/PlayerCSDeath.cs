@@ -61,7 +61,7 @@ public class PlayerCSDeath : MonoBehaviour
                 xpText.text = "+" + awardedXP + "XP";
             }
 
-            TinySauce.OnGameFinished(true, CSEndlessScore.CSScore);
+            //TinySauce.OnGameFinished(true, CSEndlessScore.CSScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);

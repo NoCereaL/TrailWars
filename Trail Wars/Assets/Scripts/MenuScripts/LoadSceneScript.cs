@@ -24,7 +24,7 @@ public class LoadSceneScript : MonoBehaviour
     public void LoadLevel()
     {
         if (PlayerPrefs.GetInt("Vibration") == 1) { Vibration.VibratePop(); }
-        TinySauce.OnGameStarted(button.name);
+        //TinySauce.OnGameStarted(button.name);
         SceneManager.LoadScene(button.name);
         buttonClick.Play();
     }

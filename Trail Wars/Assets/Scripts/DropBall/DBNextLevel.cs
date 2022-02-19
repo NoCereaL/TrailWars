@@ -47,7 +47,7 @@ public class DBNextLevel : MonoBehaviour
             currentLevel = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetInt("is" + currentLevel + "complete", 1);
 
-            TinySauce.OnGameFinished(true, 0);
+            //TinySauce.OnGameFinished(true, 0);
 
             //Player Stats
             if (PlayerPrefs.GetInt(level) == 0)      //if next Level is locked then this level is complete after completion

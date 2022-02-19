@@ -59,7 +59,7 @@ public class ABDeathEndless : MonoBehaviour
 
             //Submit Score to Leaderboard
             SubmitTheScore();
-            TinySauce.OnGameFinished(true,ABEndlessScore.ABScore);
+            //TinySauce.OnGameFinished(true,ABEndlessScore.ABScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
@@ -97,7 +97,7 @@ public class ABDeathEndless : MonoBehaviour
 
             //Submit Score to Leaderboard
             SubmitTheScore();
-            TinySauce.OnGameFinished(true, ABEndlessScore.ABScore);
+            //TinySauce.OnGameFinished(true, ABEndlessScore.ABScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
@@ -135,7 +135,7 @@ public class ABDeathEndless : MonoBehaviour
 
             //Submit Score to Leaderboard
             SubmitTheScore();
-            TinySauce.OnGameFinished(true, ABEndlessScore.ABScore);
+            //TinySauce.OnGameFinished(true, ABEndlessScore.ABScore);
 
             //Play Again
             camera.transform.SetParent(particalController.transform);
